@@ -1,5 +1,10 @@
 /* stylelint-disable selector-no-qualifying-type, property-no-vendor-prefix */
 
+body {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
 .form-signin {
     max-width: 330px;
     padding: 15px;
@@ -50,13 +55,6 @@
 
 .loginShieldImagen {
     text-align: center;
-}
-
-#DropDownListIdioma {
-    background-color: #222;
-    height: auto !important;
-    padding: 0px;
-    color: #9d9d9d;
 }
 
 #ctl01 {
@@ -150,38 +148,6 @@
     margin-left: 8px;
 }
 
-#MainContent_GridViewIdioma tbody tr th {
-    background-color: #337ab7;
-    color: #fff;
-    border: 1px solid black;
-}
-
-#MainContent_GridViewIdioma td input {
-    display: inline-block;
-    width: auto;
-    vertical-align: middle;
-    display: block;
-    width: 100%;
-    height: 34px;
-    padding: 6px 12px;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #555555;
-    background-color: #fff;
-    background-image: none;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
-    transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
-    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
-    float: none !important;
-}
-
 #MainContent_CalendarFiltroFechaInicio tbody tr table tr {
     background-color: #337ab7;
     color: #fff;
@@ -257,14 +223,6 @@ table, #MainContent_GridViewBitacora {
     background-color: #eee !important;
 }
 
-#MainContent_GridViewIdioma th:first-child {
-    width: 120px !important;
-}
-
-#MainContent_GridViewIdioma input {
-    max-width: none;
-}
-
 #MainContent_GridViewChoferes tbody tr th {
     background-color: #337ab7;
     color: #fff;
@@ -309,19 +267,7 @@ table, #MainContent_GridViewBitacora {
     border: 1px solid black;
 }
 
-#MainContent_GridViewMantenimientosProximos tbody tr th {
-    background-color: #337ab7;
-    color: #fff;
-    border: 1px solid black;
-}
-
 #MainContent_GridViewReportes tbody tr th {
-    background-color: #337ab7;
-    color: #fff;
-    border: 1px solid black;
-}
-
-#MainContent_GridViewMantenimientos tbody tr th {
     background-color: #337ab7;
     color: #fff;
     border: 1px solid black;
@@ -390,54 +336,4 @@ table, #MainContent_GridViewBitacora {
             color: #fff;
             background-color: transparent;
         }
-}
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background: black;
-}
-
-.row {
-    background: RGB(31,31,31);
-    border-radius: 30px;
-}
-
-img {
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-}
-
-.btnLogin {
-    border: none;
-    outline: none;
-    height: 50px;
-    width: 100%;
-    background-color: #F6C932;
-    color: black;
-    border-radius: 4px;
-}
-
-.btnNumDef {
-    border: none;
-    outline: none;
-    height: 50px;
-    width: 50px;
-    background-color: white;
-    color: black;
-    border-radius: 50%;
-}
-
-.btnNumSel {
-    border: none;
-    outline: none;
-    height: 50px;
-    width: 50px;
-    background-color: #F6C932;
-    color: black;
-    border-radius: 50%;
 }

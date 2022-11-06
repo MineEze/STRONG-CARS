@@ -1,52 +1,33 @@
 ﻿<%@ Page Title="Log In" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="LogIn.aspx.cs" Inherits="UI.LogIn" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
-    <section class="form my-5 mx-5">
-        <div class="container">
-            <div class="row no-gutters" id="login">
-                <div class="col-lg-5">
-                    <!--img id="login" src="Content/images/login-feed.jpg" class="img-fluid" alt=""-->
-                </div>
-                <div class="col-lg-7 px-5 pt-5">
-                    <div class="col-lg-7">
-                        <!--img id="login" src="Content/images/login-logo.png" class="img-fluid" alt=""-->
-                    </div>
-                    <div class="form-row">
-                        <div class="col-lg-7">
-                            <asp:TextBox ID="TextBoxUsuario" CssClass="form-control" placeholder="Usuario" runat="server"></asp:TextBox>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="col-lg-7">
-                            <asp:TextBox ID="TextBoxPassword" CssClass="form-control" placeholder="Password" runat="server" TextMode="Password"></asp:TextBox>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="col-lg-7">
-                            <asp:Button ID="ButtonLogIn" runat="server" OnClick="ButtonLogIn_Click" CssClass="btnLogin" Text="Ingresar" />
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="col-lg-7">
-                            <asp:Button ID="ButtonRegistrarse" runat="server" OnClick="ButtonRegistrarse_Click" CssClass="btnLogin" Text="Registrarse" />
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="col-lg-7">
-                            <asp:Label ID="LabelLogInError" runat="server" CssClass="alert alert-danger alertas" Visible="False"></asp:Label>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="col-lg-7">
-                            <asp:Label ID="LabelUsuarioBloqueado" runat="server" CssClass="alert alert-danger alertas" Visible="False"></asp:Label>
-                        </div>
-                    </div>
-                </div>
+    <br />
+    <br />
+    
+    <div class="container">
+        <div class="form-signin">
+            <div class="loginShieldImagen">
+                <img src="Content/images/shield.png" alt="" width="72" height="72" />
             </div>
-        </div>
-    </section>
+            <br />
+            <asp:Label ID="LabelUsuario" runat="server" Text="Usuario"></asp:Label>:
+            <br />
+            <asp:TextBox ID="TextBoxUsuario" class="form-control" placeholder="Usuario" runat="server"></asp:TextBox>
+            <br />
 
+            <asp:Label ID="LabelPassword" runat="server" Text="Contraseña"></asp:Label>:
+            <br />
+            <asp:TextBox ID="TextBoxPassword" class="form-control" placeholder="Password" runat="server" TextMode="Password"></asp:TextBox>
+                
+            <br />
+            <asp:Button ID="ButtonLogIn" runat="server" OnClick="ButtonLogIn_Click" CssClass="btn btn-lg btn-block btn-primary" Text="Ingresar" />
+            <br />
+            <asp:Button ID="ButtonRegistrarse" runat="server" OnClick="ButtonRegistrarse_Click" CssClass="btn btn-lg btn-block btn-primary" Text="Registrarse" />
+            <br />
+            <asp:Label ID="LabelLogInError" runat="server" CssClass="alert alert-danger alertas" Visible="False" Text="Usuario y/o contraseña incorrectos"></asp:Label>
+            <asp:Label ID="LabelUsuarioBloqueado" runat="server" CssClass="alert alert-danger alertas" Visible="False" Text="Usuario bloqueado. Contacte al administrador"></asp:Label>
+        </div>
+    </div>
     <script type="text/javascript">
         function controlEnter(obj, event) {
             var keyCode = event.keyCode ? event.keyCode : event.which ? event.which : event.charCode;
@@ -61,3 +42,5 @@
         }
     </script>
 </asp:Content>
+
+
