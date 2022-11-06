@@ -1,0 +1,443 @@
+/* stylelint-disable selector-no-qualifying-type, property-no-vendor-prefix */
+
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+    .form-signin .form-signin-heading,
+    .form-signin .checkbox {
+        margin-bottom: 10px;
+    }
+
+    .form-signin .checkbox {
+        font-weight: 400;
+    }
+
+    .form-signin .form-control {
+        position: relative;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        height: auto;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+        .form-signin .form-control:focus {
+            z-index: 2;
+        }
+
+    .form-signin input[type="email"] {
+        margin-bottom: -1px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .form-signin input[type="password"] {
+        margin-bottom: 10px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+.alertas {
+    width: 100%;
+    display: block;
+    max-width: 280px;
+    text-align: center;
+}
+
+.loginShieldImagen {
+    text-align: center;
+}
+
+#DropDownListIdioma {
+    background-color: #222;
+    height: auto !important;
+    padding: 0px;
+    color: #9d9d9d;
+}
+
+#ctl01 {
+    margin: 0;
+}
+
+.dropDownManual {
+    display: block;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 14px;
+    list-style: none;
+    border-width: 0px;
+    border-style: outset;
+}
+
+.navbar-nav > li > a {
+    margin-top: 7px !important;
+}
+
+.theme-showcase {
+    margin-top: 15px;
+}
+
+.marketing .col-lg-3 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.marketing h2 {
+    font-weight: 400;
+}
+
+.marketing .col-lg-3 p {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#MainContent_GridViewSucursales tbody tr th {
+    background-color: #337ab7;
+    color: #fff;
+    border: 1px solid black;
+}
+
+#MainContent_GridViewVehiculos tbody tr th {
+    background-color: #337ab7;
+    color: #fff;
+    border: 1px solid black;
+}
+
+.labelfor {
+    display: inline-block;
+    min-width: 200px;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    float: left;
+}
+
+.alerta-personalizada {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+
+#MainContent_GridViewSucursalesRecargos tbody tr th {
+    background-color: #337ab7;
+    color: #fff;
+    border: 1px solid black;
+}
+
+#MainContent_GridViewTelefonos tbody tr th {
+    background-color: #337ab7;
+    color: #fff;
+    border: 1px solid black;
+}
+
+#MainContent_GridViewUsuarios tbody tr th {
+    background-color: #337ab7;
+    color: #fff;
+    border: 1px solid black;
+}
+
+#MainContent_CheckBoxListPermisos tbody tr td label {
+    margin-left: 8px;
+}
+
+#MainContent_GridViewIdioma tbody tr th {
+    background-color: #337ab7;
+    color: #fff;
+    border: 1px solid black;
+}
+
+#MainContent_GridViewIdioma td input {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    float: none !important;
+}
+
+#MainContent_CalendarFiltroFechaInicio tbody tr table tr {
+    background-color: #337ab7;
+    color: #fff;
+    font-weight: bold;
+}
+
+    #MainContent_CalendarFiltroFechaInicio tbody tr table tr a {
+        color: #fff !important;
+    }
+
+#MainContent_CalendarFiltroFechaFin tbody tr table tr {
+    background-color: #337ab7;
+    color: #fff;
+    font-weight: bold;
+}
+
+    #MainContent_CalendarFiltroFechaFin tbody tr table tr a {
+        color: #fff !important;
+    }
+
+#MainContent_CalendarFechaInicio tbody tr table tr {
+    background-color: #337ab7;
+    color: #fff;
+    font-weight: bold;
+}
+
+    #MainContent_CalendarFechaInicio tbody tr table tr a {
+        color: #fff !important;
+    }
+
+
+#MainContent_GridViewBitacora tbody tr th {
+    background-color: #337ab7;
+    color: #fff;
+    border: 1px solid black;
+}
+
+#MainContent_GridViewSucursalesRecargos td input {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    float: none !important;
+}
+
+table, #MainContent_GridViewBitacora {
+    background-color: #fff !important;
+}
+
+#MainContent_CheckBoxListPermisos {
+    background-color: #eee !important;
+}
+
+#MainContent_RadioButtonListRespaldosExistentes {
+    background-color: #eee !important;
+}
+
+#MainContent_GridViewIdioma th:first-child {
+    width: 120px !important;
+}
+
+#MainContent_GridViewIdioma input {
+    max-width: none;
+}
+
+#MainContent_GridViewChoferes tbody tr th {
+    background-color: #337ab7;
+    color: #fff;
+    border: 1px solid black;
+}
+
+#MainContent_GridViewChoferes tbody tr th {
+    background-color: #337ab7;
+    color: #fff;
+    border: 1px solid black;
+}
+
+#MainContent_CalendarAlquilerFechaInicio tbody tr table tr {
+    background-color: #337ab7;
+    color: #fff;
+    font-weight: bold;
+}
+
+    #MainContent_CalendarAlquilerFechaInicio tbody tr table tr a {
+        color: #fff !important;
+    }
+
+#MainContent_CalendarAlquilerFechaFin tbody tr table tr {
+    background-color: #337ab7;
+    color: #fff;
+    font-weight: bold;
+}
+
+    #MainContent_CalendarAlquilerFechaFin tbody tr table tr a {
+        color: #fff !important;
+    }
+
+#MainContent_GridViewClientes tbody tr th {
+    background-color: #337ab7;
+    color: #fff;
+    border: 1px solid black;
+}
+
+#MainContent_GridViewAlquileres tbody tr th {
+    background-color: #337ab7;
+    color: #fff;
+    border: 1px solid black;
+}
+
+#MainContent_GridViewMantenimientosProximos tbody tr th {
+    background-color: #337ab7;
+    color: #fff;
+    border: 1px solid black;
+}
+
+#MainContent_GridViewReportes tbody tr th {
+    background-color: #337ab7;
+    color: #fff;
+    border: 1px solid black;
+}
+
+#MainContent_GridViewMantenimientos tbody tr th {
+    background-color: #337ab7;
+    color: #fff;
+    border: 1px solid black;
+}
+
+#MainContent_GridViewReservas tbody tr th {
+    background-color: #337ab7;
+    color: #fff;
+    border: 1px solid black;
+}
+
+.titulo-pagina {
+    margin-top: 25px;
+    display: block;
+    font-size: 16pt;
+    text-align: center;
+}
+
+.checkChofer label {
+    padding-left: 10px;
+}
+
+.checkDanios label {
+    padding-left: 10px;
+}
+
+
+#MainContent_LabelGrillaSinRegistros {
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+#MainContent_RadioButtonListPermisos tbody {
+    background-color: #eee;
+}
+
+    #MainContent_RadioButtonListPermisos tbody tr label {
+        margin-left: 5px;
+    }
+
+#MainContent_RadioButtonListEmpresa tbody {
+    background-color: #eee;
+}
+
+    #MainContent_RadioButtonListEmpresa tbody tr label {
+        margin-left: 5px;
+    }
+
+#MainContent_RadioButtonListEmpresasExistentes tbody {
+    background-color: #eee;
+}
+
+    #MainContent_RadioButtonListEmpresasExistentes tbody tr label {
+        margin-left: 5px;
+    }
+
+@media (max-width: 769px) {
+    .dropDownManual {
+        color: #9d9d9d;
+    }
+
+        .dropDownManual:hover, .dropDownManual:focus {
+            color: #fff;
+            background-color: transparent;
+        }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+}
+
+.row {
+    background: RGB(31,31,31);
+    border-radius: 30px;
+}
+
+img {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.btnLogin {
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 100%;
+    background-color: #F6C932;
+    color: black;
+    border-radius: 4px;
+}
+
+.btnNumDef {
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+}
+
+.btnNumSel {
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 50px;
+    background-color: #F6C932;
+    color: black;
+    border-radius: 50%;
+}
