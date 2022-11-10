@@ -6,8 +6,8 @@
     
     <div class="container">
         <div class="form-signin">
-            <div class="loginShieldImagen">
-                <img src="Content/images/shield.png" alt="" width="72" height="72" />
+            <div class="loginImagen">
+                <img src="Content/images/login-logo.png" alt="" width="280" height="150" />
             </div>
             <br />
             <asp:Label ID="LabelUsuario" runat="server" Text="Usuario"></asp:Label>:

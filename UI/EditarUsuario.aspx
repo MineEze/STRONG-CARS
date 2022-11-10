@@ -21,12 +21,12 @@
         <div class="form-group">
             <asp:Label ID="LabelNombre" runat="server" CssClass="labelfor" Text="Nombre"></asp:Label>
             <asp:TextBox ID="TextBoxNombre" runat="server" CssClass="form-control"></asp:TextBox>
-            <asp:Label ID="LabelValidacionNombre" runat="server" CssClass="alert alert-danger alerta-personalizada escondido" Text="El nombre debe tener al menos 2 caracteres"></asp:Label>
+            <asp:Label ID="LabelValidacionNombre" runat="server" CssClass="alert alert-danger alerta-personalizada escondido" Text="El nombre debe tener entre 2 y 100 caracteres"></asp:Label>
         </div>
         <div class="form-group">
             <asp:Label ID="LabelApellido" runat="server" CssClass="labelfor" Text="Apellido"></asp:Label>
             <asp:TextBox ID="TextBoxApellido" runat="server" CssClass="form-control"></asp:TextBox>
-            <asp:Label ID="LabelValidacionApellido" runat="server" CssClass="alert alert-danger alerta-personalizada escondido" Text="El apellido debe tener al menos 2 caracteres"></asp:Label>
+            <asp:Label ID="LabelValidacionApellido" runat="server" CssClass="alert alert-danger alerta-personalizada escondido" Text="El apellido debe tener entre 2 y 100 caracteres"></asp:Label>
         </div>
         <div class="form-group">
             <asp:Label ID="LabelDNI" runat="server" CssClass="labelfor" Text="DNI"></asp:Label>
@@ -41,12 +41,12 @@
         <div class="form-group">
             <asp:Label ID="LabelCalle" runat="server" CssClass="labelfor" Text="Calle"></asp:Label>
             <asp:TextBox ID="TextBoxCalle" runat="server" CssClass="form-control"></asp:TextBox>
-            <asp:Label ID="LabelValidacionCalle" runat="server" CssClass="alert alert-danger alerta-personalizada escondido" Text="Debe ingresar una calle"></asp:Label>
+            <asp:Label ID="LabelValidacionCalle" runat="server" CssClass="alert alert-danger alerta-personalizada escondido" Text="Debe ingresar una calle de hasta 100 caracteres"></asp:Label>
         </div>
         <div class="form-group">
             <asp:Label ID="LabelAltura" runat="server" CssClass="labelfor" Text="Altura"></asp:Label>
             <asp:TextBox ID="TextBoxAltura" runat="server" CssClass="form-control"></asp:TextBox>
-            <asp:Label ID="LabelValidacionAltura" runat="server" CssClass="alert alert-danger alerta-personalizada escondido" Text="Por favor ingrese la altura"></asp:Label>
+            <asp:Label ID="LabelValidacionAltura" runat="server" CssClass="alert alert-danger alerta-personalizada escondido" Text="Por favor ingrese una altura correcta"></asp:Label>
             <asp:Label ID="LabelValidacionAlturaNumerica" runat="server" CssClass="alert alert-danger alerta-personalizada escondido" Text="La altura debe ser numérica"></asp:Label>
         </div>
         <div class="form-group">
@@ -56,7 +56,7 @@
         <div class="form-group">
             <asp:Label ID="LabelCodigoPostal" runat="server" CssClass="labelfor" Text="Código postal"></asp:Label>
             <asp:TextBox ID="TextBoxCodigoPostal" runat="server" CssClass="form-control"></asp:TextBox>
-            <asp:Label ID="LabelValidacionCodigoPostal" runat="server" CssClass="alert alert-danger alerta-personalizada escondido" Text="Debe ingresar un código postal válido"></asp:Label>
+            <asp:Label ID="LabelValidacionCodigoPostal" runat="server" CssClass="alert alert-danger alerta-personalizada escondido" Text="Debe ingresar un código postal correcto"></asp:Label>
         </div>
         <div class="form-group">
             <asp:Label ID="LabelUsuario" runat="server" CssClass="labelfor" Text="Usuario"></asp:Label>
