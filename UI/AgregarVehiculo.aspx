@@ -22,15 +22,15 @@
         <br />
         <div class="form-group">
             <asp:Label ID="LabelMarca" runat="server" CssClass="labelfor" Text="Marca"></asp:Label>
-            <asp:DropDownList ID="DropDownListMarca" runat="server" CssClass="form-control" OnSelectedIndexChanged="DropDownListMarca_SelectedIndexChanged" AutoPostBack="true"></asp:DropDownList>
+            <asp:DropDownList ID="DropDownListMarca" runat="server" CssClass="ddl form-control" OnSelectedIndexChanged="DropDownListMarca_SelectedIndexChanged" AutoPostBack="true"></asp:DropDownList>
         </div>
         <div class="form-group">
             <asp:Label ID="LabelModelo" runat="server" CssClass="labelfor" Text="Modelo"></asp:Label>
-            <asp:DropDownList ID="DropDownListModelo" runat="server" CssClass="form-control"></asp:DropDownList>
+            <asp:DropDownList ID="DropDownListModelo" runat="server" CssClass="ddl form-control"></asp:DropDownList>
         </div>
         <div class="form-group">
             <asp:Label ID="LabelNivelBlindaje" runat="server" CssClass="labelfor" Text="Nivel de blindaje"></asp:Label>
-            <asp:DropDownList ID="DropDownListNivelBlindaje" runat="server" CssClass="form-control"></asp:DropDownList>
+            <asp:DropDownList ID="DropDownListNivelBlindaje" runat="server" CssClass="ddl form-control"></asp:DropDownList>
         </div>
         <div class="form-group">
             <asp:Label ID="LabelPatente" runat="server" CssClass="labelfor" Text="Patente"></asp:Label>
@@ -61,7 +61,7 @@
         </div>
         <div class="form-group">
             <asp:Label ID="LabelSucursal" runat="server" CssClass="labelfor" Text="Sucursal"></asp:Label>
-            <asp:DropDownList ID="DropDownListSucursales" runat="server" CssClass="form-control"></asp:DropDownList>
+            <asp:DropDownList ID="DropDownListSucursales" runat="server" CssClass="ddl form-control"></asp:DropDownList>
         </div>
         <div class="form-group">
             <asp:Button ID="ButtonCrearVehiculo" runat="server" OnClientClick="return validarFormRegistrarVehiculo();" OnClick="ButtonCrearVehiculo_Click" class="btn btn-primary" Text="Crear" />

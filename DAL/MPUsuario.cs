@@ -174,10 +174,10 @@ namespace DAL
 
             usuario.Id = acceso.LeerEscalar("AltaPersona", parametrosPersona);
 
-            SqlParameter[] parametrosUsuario = new SqlParameter[4];
+            SqlParameter[] parametrosUsuario = new SqlParameter[3];
             parametrosUsuario[0] = acceso.CrearParametro("@Id", usuario.Id);
-            parametrosUsuario[2] = acceso.CrearParametro("@NombreDeUsuario", usuario.NombreDeUsuario);
-            parametrosUsuario[3] = acceso.CrearParametro("@Password", usuario.Password);
+            parametrosUsuario[1] = acceso.CrearParametro("@NombreDeUsuario", usuario.NombreDeUsuario);
+            parametrosUsuario[2] = acceso.CrearParametro("@Password", usuario.Password);
 
             acceso.Escribir("AltaUsuario", parametrosUsuario);
 
@@ -229,9 +229,9 @@ namespace DAL
             parametrosPersona[4] = acceso.CrearParametro("@Email", usuario.Email);
             parametrosPersona[5] = acceso.CrearParametro("@UltimaModificacion", DateTime.Now);
 
-            SqlParameter[] parametrosUsuario = new SqlParameter[3];
+            SqlParameter[] parametrosUsuario = new SqlParameter[2];
             parametrosUsuario[0] = acceso.CrearParametro("@Id", usuario.Id);
-            parametrosUsuario[2] = acceso.CrearParametro("@NombreDeUsuario", usuario.NombreDeUsuario);
+            parametrosUsuario[1] = acceso.CrearParametro("@NombreDeUsuario", usuario.NombreDeUsuario);
 
             SqlParameter[] parametrosPermisos = new SqlParameter[1];
             parametrosPermisos[0] = acceso.CrearParametro("@IdUsuario", usuario.Id);

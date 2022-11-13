@@ -10,12 +10,7 @@
                 <img src="Content/images/login-logo.png" alt="" width="280" height="150" />
             </div>
             <br />
-            <asp:Label ID="LabelUsuario" runat="server" Text="Usuario"></asp:Label>:
-            <br />
             <asp:TextBox ID="TextBoxUsuario" class="form-control" placeholder="Usuario" runat="server"></asp:TextBox>
-            <br />
-
-            <asp:Label ID="LabelPassword" runat="server" Text="Contraseña"></asp:Label>:
             <br />
             <asp:TextBox ID="TextBoxPassword" class="form-control" placeholder="Password" runat="server" TextMode="Password"></asp:TextBox>
                 

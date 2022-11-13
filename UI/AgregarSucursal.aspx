@@ -39,7 +39,7 @@
         </div>
         <div class="form-group">
             <asp:Label ID="LabelGerente" CssClass="labelfor" runat="server" Text="Gerente"></asp:Label>
-            <asp:DropDownList ID="DropDownListGerente" runat="server" CssClass="form-control"></asp:DropDownList>
+            <asp:DropDownList ID="DropDownListGerente" runat="server" CssClass="ddl form-control"></asp:DropDownList>
         </div>
         <div class="form-group">
             <div class="row">

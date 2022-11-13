@@ -163,6 +163,8 @@
     </form>
     <script>
         $(document).ready(function () {
+            $(".navbar").hide();
+            $('#UsuarioLogueado').hide();
             $('#UsuarioLogueado').hide();
             $('#lblAdminSucursal').hide();
             $('#lblAdminUsuario').hide();
@@ -179,6 +181,7 @@
                 $('#ventas').hide();
                 $('#inspeccion').hide();
             } else {
+                $(".navbar").show();
                 // PERMISO SUCURSAL
                 if ($('#lblAdminSucursal').text() == 1) {
                     $('#LabelMenuSucursales').show();

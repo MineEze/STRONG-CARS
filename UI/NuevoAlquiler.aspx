@@ -26,7 +26,7 @@
         <br />
         <div class="form-inline">
             <asp:Label ID="LabelSucursal" runat="server" CssClass="labelfor"></asp:Label>
-            <asp:DropDownList ID="DropDownListSucursalesOrigen" runat="server" CssClass="form-control" OnSelectedIndexChanged="DropDownListSucursalesOrigen_SelectedIndexChanged"></asp:DropDownList>
+            <asp:DropDownList ID="DropDownListSucursalesOrigen" runat="server" CssClass="ddl form-control" OnSelectedIndexChanged="DropDownListSucursalesOrigen_SelectedIndexChanged"></asp:DropDownList>
         </div>
         <br />
         <br />
@@ -41,22 +41,22 @@
         </div>
         <div class="form-group">
             <asp:Label ID="LabelNivelBlindaje" runat="server" CssClass="labelfor"></asp:Label>
-            <asp:DropDownList ID="DropDownListNivelBlindaje" runat="server" CssClass="form-control" OnSelectedIndexChanged="DropDownListNivelBlindaje_SelectedIndexChanged"></asp:DropDownList>
+            <asp:DropDownList ID="DropDownListNivelBlindaje" runat="server" CssClass="ddl form-control" OnSelectedIndexChanged="DropDownListNivelBlindaje_SelectedIndexChanged"></asp:DropDownList>
         </div>
         <div class="form-group">
             <asp:Button ID="ButtonCargarVehiculos" runat="server" class="btn btn-primary" OnClick="ButtonCargarVehiculos_Click" Text="Ver vehículos disponibles" />
         </div>
         <div class="form-group">
             <asp:Label ID="LabelMenuVehiculos" runat="server" CssClass="labelfor"></asp:Label>
-            <asp:DropDownList ID="DropDownListVehiculosDisponibles" runat="server" CssClass="form-control" OnSelectedIndexChanged="DropDownListVehiculosDisponibles_SelectedIndexChanged"></asp:DropDownList>
+            <asp:DropDownList ID="DropDownListVehiculosDisponibles" runat="server" CssClass="ddl form-control" OnSelectedIndexChanged="DropDownListVehiculosDisponibles_SelectedIndexChanged"></asp:DropDownList>
         </div>
         <div class="form-group">
             <asp:Label ID="LabelSucursalDestino" runat="server" CssClass="labelfor"></asp:Label>
-            <asp:DropDownList ID="DropDownListSucursalesDestino" runat="server" CssClass="form-control" OnSelectedIndexChanged="DropDownListSucursalesDestino_SelectedIndexChanged"></asp:DropDownList>
+            <asp:DropDownList ID="DropDownListSucursalesDestino" runat="server" CssClass="ddl form-control" OnSelectedIndexChanged="DropDownListSucursalesDestino_SelectedIndexChanged"></asp:DropDownList>
         </div>
         <div class="form-group checkChofer">
             <asp:CheckBox ID="CheckBoxChofer" runat="server" OnCheckedChanged="CheckBoxChofer_CheckedChanged" CssClass="labelfor" AutoPostBack="true" Text="¿Contrata chofer?" />
-            <asp:DropDownList ID="DropDownListChoferes" runat="server" CssClass="form-control" Enabled="false" OnSelectedIndexChanged="DropDownListChoferes_SelectedIndexChanged"></asp:DropDownList>
+            <asp:DropDownList ID="DropDownListChoferes" runat="server" CssClass="ddl form-control" Enabled="false" OnSelectedIndexChanged="DropDownListChoferes_SelectedIndexChanged"></asp:DropDownList>
         </div>
         <div class="form-group">
             <asp:Button ID="ButtonPresupuestar" runat="server" class="btn btn-primary" OnClick="ButtonPresupuestar_Click" Text="Presupuestar" />
