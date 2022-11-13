@@ -65,22 +65,22 @@
             <br />
         </div>
         <div class="form-group alert alert-success" runat="server" id="HtmlPresupuesto" style="max-width: 500px;" visible="false">
-            <asp:Label ID="LabelPresupuestoDias" runat="server" Style="font-weight: bold;"></asp:Label>
+            <asp:Label ID="LabelPresupuestoDias" runat="server" Style="font-weight: bold;" Text="Días: "></asp:Label>
             <asp:Label ID="LabelPresupuestoDiasValor" runat="server"></asp:Label>
             <br />
-            <asp:Label ID="LabelPresupuestoVehiculo" runat="server" Style="font-weight: bold;"></asp:Label>
+            <asp:Label ID="LabelPresupuestoVehiculo" runat="server" Style="font-weight: bold;" Text="Costo por vehículo: "></asp:Label>
             $<asp:Label ID="LabelPresupuestoVehiculoValor" runat="server"></asp:Label>
             <br />
-            <asp:Label ID="LabelPresupuestoVehiculoKm" runat="server" Style="font-weight: bold;"></asp:Label>
+            <asp:Label ID="LabelPresupuestoVehiculoKm" runat="server" Style="font-weight: bold;" Text="Costo por kilómetro: "></asp:Label>
             $<asp:Label ID="LabelPresupuestoVehiculoKmValor" runat="server"></asp:Label>
             <br />
-            <asp:Label ID="LabelPresupuestoChofer" runat="server" Style="font-weight: bold;"></asp:Label>
+            <asp:Label ID="LabelPresupuestoChofer" runat="server" Style="font-weight: bold;" Text="Costo chofer: "></asp:Label>
             $<asp:Label ID="LabelPresupuestoChoferValor" runat="server"></asp:Label>
             <br />
-            <asp:Label ID="LabelPresupuestoRecargo" runat="server" Style="font-weight: bold;"></asp:Label>
+            <asp:Label ID="LabelPresupuestoRecargo" runat="server" Style="font-weight: bold;" Text="Recargo por sucursal: "></asp:Label>
             $<asp:Label ID="LabelPresupuestoRecargoValor" runat="server"></asp:Label>
             <br />
-            <asp:Label ID="LabelTotal" runat="server" Style="font-weight: bold;"></asp:Label>
+            <asp:Label ID="LabelTotal" runat="server" Style="font-weight: bold;" Text="Total: "></asp:Label>
             $<asp:Label ID="LabelTotalValor" runat="server"></asp:Label>
             <br />
             <br />

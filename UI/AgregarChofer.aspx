@@ -50,7 +50,7 @@
             <asp:Label ID="LabelValidacionAlturaNumerica" runat="server" CssClass="alert alert-danger alerta-personalizada escondido" Text="La altura debe ser numérica"></asp:Label>
         </div>
         <div class="form-group">
-            <asp:Label ID="LabelUnidad" runat="server" CssClass="labelfor" Text="Unidad"></asp:Label>
+            <asp:Label ID="LabelUnidad" runat="server" CssClass="labelfor" Text="Unidad (opcional)"></asp:Label>
              <asp:TextBox ID="TextBoxUnidad" runat="server" CssClass="form-control"></asp:TextBox>
         </div>
         <div class="form-group">

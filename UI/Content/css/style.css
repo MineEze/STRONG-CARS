@@ -103,14 +103,14 @@ body {
 }
 
 #MainContent_GridViewSucursales tbody tr th {
-    background-color: #337ab7;
-    color: #fff;
+    background-color: #deb42c;
+    color: #101010;
     border: 1px solid black;
 }
 
 #MainContent_GridViewVehiculos tbody tr th {
-    background-color: #337ab7;
-    color: #fff;
+    background-color: #deb42c;
+    color: #101010;
     border: 1px solid black;
 }
 
@@ -130,20 +130,20 @@ body {
 
 
 #MainContent_GridViewSucursalesRecargos tbody tr th {
-    background-color: #337ab7;
-    color: #fff;
+    background-color: #deb42c;
+    color: #101010;
     border: 1px solid black;
 }
 
 #MainContent_GridViewTelefonos tbody tr th {
-    background-color: #337ab7;
-    color: #fff;
+    background-color: #deb42c;
+    color: #101010;
     border: 1px solid black;
 }
 
 #MainContent_GridViewUsuarios tbody tr th {
-    background-color: #337ab7;
-    color: #fff;
+    background-color: #deb42c;
+    color: #101010;
     border: 1px solid black;
 }
 
@@ -152,39 +152,39 @@ body {
 }
 
 #MainContent_CalendarFiltroFechaInicio tbody tr table tr {
-    background-color: #337ab7;
-    color: #fff;
+    background-color: #deb42c;
+    color: #101010;
     font-weight: bold;
 }
 
     #MainContent_CalendarFiltroFechaInicio tbody tr table tr a {
-        color: #fff !important;
+        color: #101010 !important;
     }
 
 #MainContent_CalendarFiltroFechaFin tbody tr table tr {
-    background-color: #337ab7;
-    color: #fff;
+    background-color: #deb42c;
+    color: #101010;
     font-weight: bold;
 }
 
     #MainContent_CalendarFiltroFechaFin tbody tr table tr a {
-        color: #fff !important;
+        color: #101010 !important;
     }
 
 #MainContent_CalendarFechaInicio tbody tr table tr {
-    background-color: #337ab7;
-    color: #fff;
+    background-color: #deb42c;
+    color: #101010;
     font-weight: bold;
 }
 
     #MainContent_CalendarFechaInicio tbody tr table tr a {
-        color: #fff !important;
+        color: #101010 !important;
     }
 
 
 #MainContent_GridViewBitacora tbody tr th {
-    background-color: #337ab7;
-    color: #fff;
+    background-color: #deb42c;
+    color: #101010;
     border: 1px solid black;
 }
 
@@ -227,58 +227,58 @@ table, #MainContent_GridViewBitacora {
 }
 
 #MainContent_GridViewChoferes tbody tr th {
-    background-color: #337ab7;
-    color: #fff;
+    background-color: #deb42c;
+    color: #101010;
     border: 1px solid black;
 }
 
 #MainContent_GridViewChoferes tbody tr th {
-    background-color: #337ab7;
-    color: #fff;
+    background-color: #deb42c;
+    color: #101010;
     border: 1px solid black;
 }
 
 #MainContent_CalendarAlquilerFechaInicio tbody tr table tr {
-    background-color: #337ab7;
-    color: #fff;
+    background-color: #deb42c;
+    color: #101010;
     font-weight: bold;
 }
 
     #MainContent_CalendarAlquilerFechaInicio tbody tr table tr a {
-        color: #fff !important;
+        color: #101010 !important;
     }
 
 #MainContent_CalendarAlquilerFechaFin tbody tr table tr {
-    background-color: #337ab7;
-    color: #fff;
+    background-color: #deb42c;
+    color: #101010;
     font-weight: bold;
 }
 
     #MainContent_CalendarAlquilerFechaFin tbody tr table tr a {
-        color: #fff !important;
+        color: #101010 !important;
     }
 
 #MainContent_GridViewClientes tbody tr th {
-    background-color: #337ab7;
-    color: #fff;
+    background-color: #deb42c;
+    color: #101010;
     border: 1px solid black;
 }
 
 #MainContent_GridViewAlquileres tbody tr th {
-    background-color: #337ab7;
-    color: #fff;
+    background-color: #deb42c;
+    color: #101010;
     border: 1px solid black;
 }
 
 #MainContent_GridViewReportes tbody tr th {
-    background-color: #337ab7;
-    color: #fff;
+    background-color: #deb42c;
+    color: #101010;
     border: 1px solid black;
 }
 
 #MainContent_GridViewReservas tbody tr th {
-    background-color: #337ab7;
-    color: #fff;
+    background-color: #deb42c;
+    color: #101010;
     border: 1px solid black;
 }
 
@@ -336,7 +336,7 @@ table, #MainContent_GridViewBitacora {
     }
 
         .dropDownManual:hover, .dropDownManual:focus {
-            color: #fff;
+            color: #101010;
             background-color: transparent;
         }
 }
