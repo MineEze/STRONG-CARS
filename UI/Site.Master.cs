@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -11,6 +12,7 @@ namespace UI
 {
     public partial class SiteMaster : MasterPage
     {
+        public string EstiloBackground = "";
         protected void Page_Load(object sender, EventArgs e)
         {
             administracion.Visible = false;
@@ -30,6 +32,14 @@ namespace UI
                 LinkButtonLogOut.Visible = false;
                 UsuarioLogueado.Text = "logout";
             }
+
+            //Setear background color
+            string pageName = Path.GetFileNameWithoutExtension(Page.AppRelativeVirtualPath);
+            if (pageName.ToLower()=="login")
+            {
+                EstiloBackground = "blackBackground";
+            }
+
         }
 
         public void EsconderOpcionesSegunPermisos(Usuario usuario)

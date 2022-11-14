@@ -17,7 +17,7 @@
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <link rel="stylesheet" href="Content/css/style.css">
 </head>
-<body>
+<body class="<% =EstiloBackground %>"">
     <form runat="server">
         <asp:ScriptManager runat="server">
             <Scripts>
@@ -47,7 +47,8 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <asp:LinkButton ID="LinkButtonStrongCars" runat="server" OnClick="ButtonStrongCars_Click" Text="StrongCars" CssClass="navbar-brand"></asp:LinkButton>
+                    <asp:ImageButton ID="ImageButton1" runat="server" OnClick="ButtonStrongCars_Click" Text="StrongCars" CssClass="navbar-brand" ImageUrl="~/Content/images/logo.png" Visible="true" Height="80" Width="150"></asp:ImageButton>
+                    <asp:LinkButton ID="LinkButtonStrongCars" runat="server" OnClick="ButtonStrongCars_Click" Text="StrongCars" CssClass="navbar-brand" Visible="false"></asp:LinkButton>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-inverse navbar-right">

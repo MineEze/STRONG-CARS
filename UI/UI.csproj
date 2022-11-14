@@ -149,7 +149,6 @@
     <Content Include="Content\images\cliente.png" />
     <Content Include="Content\images\login-feed.jpg" />
     <Content Include="Content\images\login-logo.png" />
-    <Content Include="Content\images\mantenimiento.png" />
     <Content Include="Content\images\newcar.png" />
     <Content Include="Content\images\newcliente.png" />
     <Content Include="Content\images\newsucursal.png" />
