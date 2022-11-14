@@ -29,6 +29,6 @@ namespace BE
 
         public string Vehiculo { get; set; }
 
-        public string Total { get; set; }
+        public string CostoTotal { get; set; }
     }
 }

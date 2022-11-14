@@ -6,7 +6,6 @@ C:\Users\Ezequiel\Desktop\TFI\STRONG-CARS\BE\obj\Debug\BE.csproj.AssemblyReferen
 C:\Users\Ezequiel\Desktop\TFI\STRONG-CARS\BE\obj\Debug\BE.csproj.CoreCompileInputs.cache
 C:\Users\Ezequiel\source\repos\STRONG-CARS\BE\bin\Debug\BE.dll
 C:\Users\Ezequiel\source\repos\STRONG-CARS\BE\bin\Debug\BE.pdb
-C:\Users\Ezequiel\source\repos\STRONG-CARS\BE\obj\Debug\BE.csproj.AssemblyReference.cache
 C:\Users\Ezequiel\source\repos\STRONG-CARS\BE\obj\Debug\BE.csproj.CoreCompileInputs.cache
 C:\Users\Ezequiel\source\repos\STRONG-CARS\BE\obj\Debug\BE.dll
 C:\Users\Ezequiel\source\repos\STRONG-CARS\BE\obj\Debug\BE.pdb

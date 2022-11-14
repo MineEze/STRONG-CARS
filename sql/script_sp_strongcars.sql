@@ -320,13 +320,13 @@ CREATE PROC [dbo].[AltaReserva]
 @CostoVehiculo decimal,
 @CostoChofer decimal,
 @RecargoSucursal decimal,
-@Total decimal,
+@CostoTotal decimal,
 @UltimaModificacion datetime2
 
 AS BEGIN
 
-INSERT INTO Reserva (IdVehiculo, FechaDeInicio, FechaDeFin, CostoVehiculo, CostoChofer, RecargoSucursal, Total, UltimaModificacion)
-VALUES (@IdVehiculo, @FechaDeInicio, @FechaDeFin, @CostoVehiculo, @CostoChofer, @RecargoSucursal, @Total, @UltimaModificacion)
+INSERT INTO Reserva (IdVehiculo, FechaDeInicio, FechaDeFin, CostoVehiculo, CostoChofer, RecargoSucursal, CostoTotal, UltimaModificacion)
+VALUES (@IdVehiculo, @FechaDeInicio, @FechaDeFin, @CostoVehiculo, @CostoChofer, @RecargoSucursal, @CostoTotal, @UltimaModificacion)
 SELECT SCOPE_IDENTITY();
 
 END
@@ -750,7 +750,7 @@ CREATE PROC [dbo].[ListarAlquilerConChofer]
 AS 
 BEGIN
 
-SELECT Reserva.Id, IdVehiculo, FechaDeInicio, FechaDeFin, Reserva.CostoVehiculo, Reserva.CostoChofer, Reserva.RecargoSucursal, Reserva.Total, UltimaModificacion, IdChofer
+SELECT Reserva.Id, IdVehiculo, FechaDeInicio, FechaDeFin, Reserva.CostoVehiculo, Reserva.CostoChofer, Reserva.RecargoSucursal, Reserva.CostoTotal, UltimaModificacion, IdChofer
 FROM Reserva
 INNER JOIN AlquilerConChofer ON Reserva.Id = AlquilerConChofer.Id;
 
@@ -770,7 +770,7 @@ CREATE PROC [dbo].[ListarAlquileres]
 AS 
 BEGIN
 
-SELECT Reserva.Id, IdVehiculo, FechaDeInicio, FechaDeFin, Reserva.CostoVehiculo, Reserva.CostoChofer, Reserva.RecargoSucursal, Reserva.Total, Reserva.UltimaModificacion, IdSucursalOrigen, IdSucursalDestino, Retornado, Nombre, Apellido
+SELECT Reserva.Id, IdVehiculo, FechaDeInicio, FechaDeFin, Reserva.CostoVehiculo, Reserva.CostoChofer, Reserva.RecargoSucursal, Reserva.CostoTotal, Reserva.UltimaModificacion, IdSucursalOrigen, IdSucursalDestino, Retornado, Nombre, Apellido
 FROM Reserva
 INNER JOIN Alquiler ON Reserva.Id = Alquiler.Id
 INNER JOIN Persona ON Persona.Id = Alquiler.IdCliente;
@@ -980,7 +980,7 @@ CREATE PROC [dbo].[ListarReservas]
 AS 
 BEGIN
 
-SELECT Id, IdVehiculo, FechaDeInicio, FechaDeFin, CostoVehiculo, CostoChofer, RecargoSucursal, Total, UltimaModificacion
+SELECT Id, IdVehiculo, FechaDeInicio, FechaDeFin, CostoVehiculo, CostoChofer, RecargoSucursal, CostoTotal, UltimaModificacion
 FROM Reserva;
 
 END

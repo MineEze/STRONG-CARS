@@ -22,6 +22,6 @@ namespace BE
 
         public decimal RecargoSucursal { get; set; }
 
-        public decimal Total { get; set; }
+        public decimal CostoTotal { get; set; }
     }
 }

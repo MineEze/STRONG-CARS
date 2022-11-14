@@ -15,6 +15,7 @@ namespace BLL
 
         public BLLPermiso(Usuario usuario)
         {
+            _bllBitacora = new BLLBitacora();
             _usuarioLogueado = usuario;
         }
         public BLLPermiso()

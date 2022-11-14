@@ -35,7 +35,7 @@ namespace UI
 
             //Setear background color
             string pageName = Path.GetFileNameWithoutExtension(Page.AppRelativeVirtualPath);
-            if (pageName.ToLower()=="login")
+            if (pageName.ToLower()=="login" || pageName.ToLower() == "registrarse")
             {
                 EstiloBackground = "blackBackground";
             }

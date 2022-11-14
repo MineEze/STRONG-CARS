@@ -285,7 +285,7 @@ CREATE TABLE [dbo].[Reserva](
 	[CostoVehiculo] [decimal](18, 0) NOT NULL,
 	[CostoChofer] [decimal](18, 0) NOT NULL,
 	[RecargoSucursal] [decimal](18, 0) NOT NULL,
-	[Total] [decimal](18, 0) NOT NULL,
+	[CostoTotal] [decimal](18, 0) NOT NULL,
 	[UltimaModificacion] [datetime2](7) NOT NULL,
 PRIMARY KEY CLUSTERED 
 (

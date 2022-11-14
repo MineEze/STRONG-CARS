@@ -64,5 +64,10 @@ namespace UI
                 LabelNombreDeUsuarioEnUso.Visible = true;
             }
         }
+
+        protected void ButtonLogin_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Login.aspx");
+        }
     }
 }

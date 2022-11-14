@@ -55,7 +55,7 @@ namespace BLL
                     FechaInicio = alquiler.FechaInicio.ToString("dd/MM/yyyy"),
                     FechaFin = alquiler.FechaFin.ToString("dd/MM/yyyy"),
                     Vehiculo = alquiler.Vehiculo.ToString(),
-                    Total = alquiler.Total.ToString()
+                    CostoTotal = alquiler.CostoTotal.ToString()
                 });
             }
 

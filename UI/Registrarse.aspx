@@ -75,6 +75,8 @@
         </div>
         <div class="form-group">
             <asp:Button ID="ButtonCrearUsuario" runat="server" OnClientClick="return validarFormRegistrarse();" OnClick="ButtonCrearUsuario_Click" class="btn btn-primary" Text="Crear usuario" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Button ID="ButtonLogin" runat="server" OnClick="ButtonLogin_Click" class="btn btn-primary" Text="Volver al Login" />
             <br />
             <asp:Label ID="LabelNombreDeUsuarioEnUso" runat="server" CssClass="alert alert-danger alerta-personalizada" Text="Nombre de usuario en uso."></asp:Label>
         </div>

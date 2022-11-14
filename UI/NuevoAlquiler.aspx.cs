@@ -157,7 +157,7 @@ namespace UI
             alquiler.CostoChofer = presupuesto.CostoChofer;
             alquiler.CostoVehiculo = presupuesto.CostoVehiculo;
             alquiler.RecargoSucursal = presupuesto.RecargoSucursal;
-            alquiler.Total = presupuesto.Total;
+            alquiler.CostoTotal = presupuesto.Total;
             Session["NuevoAlquiler"] = alquiler;
             //hasta aca nuevo
             var formato = string.Format("F{0}", 2);

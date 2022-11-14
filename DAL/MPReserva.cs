@@ -31,7 +31,7 @@ namespace DAL
                     CostoVehiculo = Convert.ToDecimal(Registro["CostoVehiculo"]),
                     CostoChofer = Convert.ToDecimal(Registro["CostoChofer"]),
                     RecargoSucursal = Convert.ToDecimal(Registro["RecargoSucursal"]),
-                    Total = Convert.ToDecimal(Registro["Total"])
+                    CostoTotal = Convert.ToDecimal(Registro["CostoTotal"])
                 });
             }
 
@@ -62,7 +62,7 @@ namespace DAL
                     CostoVehiculo = Convert.ToDecimal(Registro["CostoVehiculo"]),
                     CostoChofer = Convert.ToDecimal(Registro["CostoChofer"]),
                     RecargoSucursal = Convert.ToDecimal(Registro["RecargoSucursal"]),
-                    Total = Convert.ToDecimal(Registro["Total"])
+                    CostoTotal = Convert.ToDecimal(Registro["CostoTotal"])
                 });
             }
 
@@ -104,7 +104,7 @@ namespace DAL
                         CostoVehiculo = Convert.ToDecimal(Registro["CostoVehiculo"]),
                         CostoChofer = Convert.ToDecimal(Registro["CostoChofer"]),
                         RecargoSucursal = Convert.ToDecimal(Registro["RecargoSucursal"]),
-                        Total = Convert.ToDecimal(Registro["Total"])
+                        CostoTotal = Convert.ToDecimal(Registro["CostoTotal"])
                     });
             }
 
@@ -124,7 +124,7 @@ namespace DAL
             parametrosReserva[3] = acceso.CrearParametro("@CostoVehiculo", alquiler.CostoVehiculo.ToString());
             parametrosReserva[4] = acceso.CrearParametro("@CostoChofer", alquiler.CostoChofer.ToString());
             parametrosReserva[5] = acceso.CrearParametro("@RecargoSucursal", alquiler.RecargoSucursal.ToString());
-            parametrosReserva[6] = acceso.CrearParametro("@Total", alquiler.Total.ToString());
+            parametrosReserva[6] = acceso.CrearParametro("@CostoTotal", alquiler.CostoTotal.ToString());
             parametrosReserva[7] = acceso.CrearParametro("@UltimaModificacion", DateTime.Now);
 
             acceso.Abrir();
