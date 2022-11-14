@@ -19,7 +19,7 @@
                 <img class="img-circle" src="Content/images/newuser.png" alt="Generic placeholder image" width="140" height="140">
                 <p></p>
                 <p>
-                    <asp:Button ID="ButtonRegistrarUsuario" runat="server" class="btn btn-primary" OnClick="ButtonRegistrarUsuario_Click" Text="Crear usuario" />
+                    <asp:Button ID="ButtonRegistrarUsuario" runat="server" class="btn btn-primary" OnClick="ButtonRegistrarUsuario_Click" Text="Registrar usuario" />
                 </p>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" runat="server" id="HtmlListarUsuarios">
@@ -33,7 +33,7 @@
                 <img class="img-circle" src="Content/images/permiso.png" alt="Generic placeholder image" width="140" height="140">
                 <p></p>
                 <p>
-                    <asp:Button ID="ButtonAgregarPermiso" runat="server" class="btn btn-primary" OnClick="ButtonAgregarPermiso_Click" Text="Permisos" />
+                    <asp:Button ID="ButtonAgregarPermiso" runat="server" class="btn btn-primary" OnClick="ButtonAgregarPermiso_Click" Text="Agregar permiso" />
                 </p>
             </div>
         </div>

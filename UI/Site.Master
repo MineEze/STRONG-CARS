@@ -57,20 +57,6 @@
                                 <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li class="dropdown-header">
-                                    <asp:Label ID="LabelMenuSucursales" runat="server" Text="Sucursales"></asp:Label>
-                                </li>
-                                <li><a href="#" id="linkAgregarSucursal">
-                                    <asp:Button ID="ButtonAgregarSucursal" runat="server" class="dropDownManual" OnClick="ButtonAgregarSucursal_Click" Text="Agregar sucursal" /></a></li>
-                                <li><a href="#" id="linkListarSucursal">
-                                    <asp:Button ID="ButtonListarSucursales" runat="server" class="dropDownManual" OnClick="ButtonListarSucursales_Click" Text="Ver sucursales" /></a></li>
-                                <li role="separator" id="dividerSucursales" class="divider"></li>
-                                <li class="dropdown-header">
-                                    <asp:Label ID="LabelMenuBaseDeDatos" runat="server" Text="Base de datos"></asp:Label>
-                                </li>
-                                <li><a href="#" id="linkBitacora">
-                                    <asp:Button ID="ButtonBitacora" runat="server" class="dropDownManual" OnClick="ButtonBitacora_Click" Text="Bitácora" /></a></li>
-                                <li role="separator" class="divider" id="dividerAdmin"></li>
-                                <li class="dropdown-header">
                                     <asp:Label ID="LabelMenuUsuarios" runat="server" Text="Usuarios"></asp:Label>
                                 </li>
                                 <li><a href="#" id="linkRegistrarUsuario">
@@ -81,12 +67,34 @@
                                     <asp:Button ID="ButtonAgregarPermiso" runat="server" class="dropDownManual" OnClick="ButtonAgregarPermiso_Click" Text="Permisos" /></a></li>
                                 <li role="separator" id="dividerUsuarios" class="divider"></li>
                                 <li class="dropdown-header">
+                                    <asp:Label ID="LabelMenuSucursales" runat="server" Text="Sucursales"></asp:Label>
+                                </li>
+                                <li><a href="#" id="linkAgregarSucursal">
+                                    <asp:Button ID="ButtonAgregarSucursal" runat="server" class="dropDownManual" OnClick="ButtonAgregarSucursal_Click" Text="Agregar sucursal" /></a></li>
+                                <li><a href="#" id="linkListarSucursal">
+                                    <asp:Button ID="ButtonListarSucursales" runat="server" class="dropDownManual" OnClick="ButtonListarSucursales_Click" Text="Ver sucursales" /></a></li>
+                                <li role="separator" id="dividerSucursales" class="divider"></li>
+                                <li class="dropdown-header">
+                                    <asp:Label ID="Label1" runat="server" Text="Vehículos"></asp:Label>
+                                </li>
+                                <li><a href="#" id="linkAgregarVehiculo">
+                                    <asp:Button ID="ButtonAgregarVehiculo" runat="server" class="dropDownManual" OnClick="ButtonAgregarVehiculo_Click" Text="Agregar vehículo" /></a></li>
+                                <li><a href="#" id="linkVerVehiculos">
+                                    <asp:Button ID="ButtonVerVehiculos" runat="server" class="dropDownManual" OnClick="ButtonVerVehiculos_Click" Text="Ver vehículos" /></a></li>
+                                <li role="separator" id="dividerVehiculos" class="divider"></li>
+                                <li class="dropdown-header">
                                     <asp:Label ID="LabelMenuChofer" runat="server" Text="Choferes"></asp:Label>
                                 </li>
                                 <li><a href="#" id="linkAgregarChofer">
                                     <asp:Button ID="ButtonAgregarChofer" runat="server" class="dropDownManual" OnClick="ButtonAgregarChofer_Click" Text="Agregar chofer" /></a></li>
                                 <li><a href="#" id="linkVerChofer">
                                     <asp:Button ID="ButtonVerChoferes" runat="server" class="dropDownManual" OnClick="ButtonVerChoferes_Click" Text="Ver choferes" /></a></li>
+                                <li role="separator" id="dividerChoferes" class="divider"></li>
+                                <li class="dropdown-header">
+                                    <asp:Label ID="LabelMenuBaseDeDatos" runat="server" Text="Base de datos"></asp:Label>
+                                </li>
+                                <li><a href="#" id="linkBitacora">
+                                    <asp:Button ID="ButtonBitacora" runat="server" class="dropDownManual" OnClick="ButtonBitacora_Click" Text="Bitácora" /></a></li>
                             </ul>
                         </li>
                         <li id="ventas" class="dropdown" runat="server">
@@ -105,10 +113,10 @@
                                 <li class="dropdown-header">
                                     <asp:Label ID="LabelMenuAlquileres" runat="server" Text="Alquileres"></asp:Label>
                                 </li>
-                                <li><a href="#" id="linkVerAlquileres">
-                                    <asp:Button ID="ButtonVerAlquileres" runat="server" class="dropDownManual" OnClick="ButtonVerAlquileres_Click" Text="Ver alquileres" /></a></li>
                                 <li><a href="#" id="linkNuevoAlquiler">
                                     <asp:Button ID="ButtonNuevoAlquiler" runat="server" class="dropDownManual" OnClick="ButtonNuevoAlquiler_Click" Text="Nuevo alquiler" /></a></li>
+                                <li><a href="#" id="linkVerAlquileres">
+                                    <asp:Button ID="ButtonVerAlquileres" runat="server" class="dropDownManual" OnClick="ButtonVerAlquileres_Click" Text="Ver alquileres" /></a></li>
                             </ul>
                         </li>
                         <li id="inspeccion" class="dropdown" runat="server">
@@ -119,15 +127,10 @@
                                 <li class="dropdown-header">
                                     <asp:Label ID="LabelMenuVehiculos" runat="server" Text="Vehículos"></asp:Label>
                                 </li>
-                                <li><a href="#" id="linkAgregarVehiculo">
-                                    <asp:Button ID="ButtonAgregarVehiculo" runat="server" class="dropDownManual" OnClick="ButtonAgregarVehiculo_Click" Text="Agregar vehículo" /></a></li>
-                                <li><a href="#" id="linkVerVehiculos">
-                                    <asp:Button ID="ButtonVerVehiculos" runat="server" class="dropDownManual" OnClick="ButtonVerVehiculos_Click" Text="Ver vehículos" /></a></li>
                                 <li><a href="#" id="linkRetorno">
                                     <asp:Button ID="ButtonRetorno" runat="server" class="dropDownManual" OnClick="ButtonRetorno_Click" Text="Retorno" /></a></li>
                                 <li><a href="#" id="linkReportes">
-                                    <asp:Button ID="ButtonReportes" runat="server" class="dropDownManual" OnClick="ButtonReportes_Click" /></a></li>
-                                <li role="separator" class="divider"></li> 
+                                    <asp:Button ID="ButtonReportes" runat="server" class="dropDownManual" OnClick="ButtonReportes_Click" Text="Ver reportes de daños"/></a></li>
                             </ul>
                         </li>
 

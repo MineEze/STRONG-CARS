@@ -102,7 +102,7 @@ namespace UI
                 HtmlAlquiler.Visible = false;
             }
 
-            if (bllPermiso.PermisoEncontrado(usuario.Permisos, "InspeccionVehiculo"))
+            if (bllPermiso.PermisoEncontrado(usuario.Permisos, "AdministracionVehiculo"))
             {
                 HtmlAgregarVehiculo.Visible = true;
                 HtmlListarVehiculos.Visible = true;

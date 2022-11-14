@@ -507,15 +507,15 @@ INSERT [dbo].[Permiso] ([Id], [Nombre]) VALUES (5, N'AdministracionChofer')
 GO
 INSERT [dbo].[Permiso] ([Id], [Nombre]) VALUES (6, N'AdministracionPermiso')
 GO
-INSERT [dbo].[Permiso] ([Id], [Nombre]) VALUES (7, N'Ventas')
+INSERT [dbo].[Permiso] ([Id], [Nombre]) VALUES (7, N'AdministracionVehiculo')
 GO
-INSERT [dbo].[Permiso] ([Id], [Nombre]) VALUES (8, N'VentasCliente')
+INSERT [dbo].[Permiso] ([Id], [Nombre]) VALUES (8, N'Ventas')
 GO
-INSERT [dbo].[Permiso] ([Id], [Nombre]) VALUES (9, N'VentasAlquiler')
+INSERT [dbo].[Permiso] ([Id], [Nombre]) VALUES (9, N'VentasCliente')
 GO
-INSERT [dbo].[Permiso] ([Id], [Nombre]) VALUES (10, N'Inspeccion')
+INSERT [dbo].[Permiso] ([Id], [Nombre]) VALUES (10, N'VentasAlquiler')
 GO
-INSERT [dbo].[Permiso] ([Id], [Nombre]) VALUES (11, N'InspeccionVehiculo')
+INSERT [dbo].[Permiso] ([Id], [Nombre]) VALUES (11, N'Inspeccion')
 GO
 INSERT [dbo].[Permiso] ([Id], [Nombre]) VALUES (12, N'InspeccionRetorno')
 GO
@@ -531,19 +531,133 @@ INSERT [dbo].[GrupoPermiso] ([IdGrupo], [IdHijo]) VALUES (1, 5)
 GO
 INSERT [dbo].[GrupoPermiso] ([IdGrupo], [IdHijo]) VALUES (1, 6)
 GO
-INSERT [dbo].[GrupoPermiso] ([IdGrupo], [IdHijo]) VALUES (7, 8)
+INSERT [dbo].[GrupoPermiso] ([IdGrupo], [IdHijo]) VALUES (1, 7)
 GO
-INSERT [dbo].[GrupoPermiso] ([IdGrupo], [IdHijo]) VALUES (7, 9)
+INSERT [dbo].[GrupoPermiso] ([IdGrupo], [IdHijo]) VALUES (8, 9)
 GO
-INSERT [dbo].[GrupoPermiso] ([IdGrupo], [IdHijo]) VALUES (10, 11)
+INSERT [dbo].[GrupoPermiso] ([IdGrupo], [IdHijo]) VALUES (8, 10)
 GO
-INSERT [dbo].[GrupoPermiso] ([IdGrupo], [IdHijo]) VALUES (10, 12)
+INSERT [dbo].[GrupoPermiso] ([IdGrupo], [IdHijo]) VALUES (11, 12)
 GO
-INSERT [dbo].[GrupoPermiso] ([IdGrupo], [IdHijo]) VALUES (10, 13)
+INSERT [dbo].[GrupoPermiso] ([IdGrupo], [IdHijo]) VALUES (11, 13)
 GO
 INSERT [dbo].[Usuario] ([Id], [NombreDeUsuario], [Password], [CantidadIntentosLogIn], [Bloqueado], [Borrado]) VALUES (1, N'ezequiel', N'D7216DEC976C1BEB88A5B60E749ABF07', 0, 0, 0)
 GO
 INSERT [dbo].[Usuario] ([Id], [NombreDeUsuario], [Password], [CantidadIntentosLogIn], [Bloqueado], [Borrado]) VALUES (2, N'gus1', N'DB5E1E5EBAB96BF1CB6936992DF9DBDA', 0, 0, 0)
 GO
 INSERT [dbo].[UsuarioPermiso] ([IdUsuario], [IdPermiso]) VALUES (1, 1)
+GO
+SET IDENTITY_INSERT [dbo].[Marca] ON 
+
+GO
+INSERT [dbo].[Marca] ([Id], [Nombre]) VALUES (1, N'Ford')
+GO
+INSERT [dbo].[Marca] ([Id], [Nombre]) VALUES (2, N'Volkswagen')
+GO
+INSERT [dbo].[Marca] ([Id], [Nombre]) VALUES (3, N'BMW')
+GO
+INSERT [dbo].[Marca] ([Id], [Nombre]) VALUES (4, N'Mercedes Benz')
+GO
+INSERT [dbo].[Marca] ([Id], [Nombre]) VALUES (5, N'Audi')
+GO
+INSERT [dbo].[Marca] ([Id], [Nombre]) VALUES (6, N'Chevrolet')
+GO
+INSERT [dbo].[Marca] ([Id], [Nombre]) VALUES (7, N'Suzuki')
+GO
+INSERT [dbo].[Marca] ([Id], [Nombre]) VALUES (8, N'Fiat')
+GO
+INSERT [dbo].[Marca] ([Id], [Nombre]) VALUES (9, N'Citroen')
+GO
+INSERT [dbo].[Marca] ([Id], [Nombre]) VALUES (10, N'Peugeot')
+GO
+INSERT [dbo].[Marca] ([Id], [Nombre]) VALUES (11, N'Renault')
+GO
+INSERT [dbo].[Marca] ([Id], [Nombre]) VALUES (12, N'Honda')
+GO
+INSERT [dbo].[Marca] ([Id], [Nombre]) VALUES (13, N'Kia')
+GO
+SET IDENTITY_INSERT [dbo].[Marca] OFF
+GO
+SET IDENTITY_INSERT [dbo].[Modelo] ON 
+
+GO
+INSERT [dbo].[Modelo] ([Id], [IdMarca], [Nombre]) VALUES (1, 1, N'Fiesta')
+GO
+INSERT [dbo].[Modelo] ([Id], [IdMarca], [Nombre]) VALUES (2, 1, N'Mondeo')
+GO
+INSERT [dbo].[Modelo] ([Id], [IdMarca], [Nombre]) VALUES (3, 2, N'Passat')
+GO
+INSERT [dbo].[Modelo] ([Id], [IdMarca], [Nombre]) VALUES (4, 2, N'Vento')
+GO
+INSERT [dbo].[Modelo] ([Id], [IdMarca], [Nombre]) VALUES (5, 3, N'320')
+GO
+INSERT [dbo].[Modelo] ([Id], [IdMarca], [Nombre]) VALUES (6, 3, N'330')
+GO
+INSERT [dbo].[Modelo] ([Id], [IdMarca], [Nombre]) VALUES (7, 3, N'430')
+GO
+INSERT [dbo].[Modelo] ([Id], [IdMarca], [Nombre]) VALUES (8, 3, N'X5')
+GO
+INSERT [dbo].[Modelo] ([Id], [IdMarca], [Nombre]) VALUES (9, 4, N'Clase A')
+GO
+INSERT [dbo].[Modelo] ([Id], [IdMarca], [Nombre]) VALUES (10, 4, N'Clase C')
+GO
+INSERT [dbo].[Modelo] ([Id], [IdMarca], [Nombre]) VALUES (11, 4, N'Clase E')
+GO
+INSERT [dbo].[Modelo] ([Id], [IdMarca], [Nombre]) VALUES (12, 5, N'A4')
+GO
+INSERT [dbo].[Modelo] ([Id], [IdMarca], [Nombre]) VALUES (13, 5, N'A5')
+GO
+INSERT [dbo].[Modelo] ([Id], [IdMarca], [Nombre]) VALUES (14, 5, N'A6')
+GO
+INSERT [dbo].[Modelo] ([Id], [IdMarca], [Nombre]) VALUES (15, 5, N'A8')
+GO
+INSERT [dbo].[Modelo] ([Id], [IdMarca], [Nombre]) VALUES (16, 5, N'Q7')
+GO
+INSERT [dbo].[Modelo] ([Id], [IdMarca], [Nombre]) VALUES (17, 6, N'Onix')
+GO
+INSERT [dbo].[Modelo] ([Id], [IdMarca], [Nombre]) VALUES (18, 6, N'Cruze')
+GO
+INSERT [dbo].[Modelo] ([Id], [IdMarca], [Nombre]) VALUES (19, 7, N'Vitara')
+GO
+INSERT [dbo].[Modelo] ([Id], [IdMarca], [Nombre]) VALUES (20, 7, N'Swift')
+GO
+INSERT [dbo].[Modelo] ([Id], [IdMarca], [Nombre]) VALUES (21, 8, N'Cronos')
+GO
+INSERT [dbo].[Modelo] ([Id], [IdMarca], [Nombre]) VALUES (22, 8, N'Argo')
+GO
+INSERT [dbo].[Modelo] ([Id], [IdMarca], [Nombre]) VALUES (23, 8, N'Uno Way')
+GO
+INSERT [dbo].[Modelo] ([Id], [IdMarca], [Nombre]) VALUES (24, 9, N'C3')
+GO
+INSERT [dbo].[Modelo] ([Id], [IdMarca], [Nombre]) VALUES (25, 9, N'C4')
+GO
+INSERT [dbo].[Modelo] ([Id], [IdMarca], [Nombre]) VALUES (26, 9, N'C5')
+GO
+INSERT [dbo].[Modelo] ([Id], [IdMarca], [Nombre]) VALUES (27, 10, N'208')
+GO
+INSERT [dbo].[Modelo] ([Id], [IdMarca], [Nombre]) VALUES (28, 10, N'308')
+GO
+INSERT [dbo].[Modelo] ([Id], [IdMarca], [Nombre]) VALUES (29, 10, N'408')
+GO
+INSERT [dbo].[Modelo] ([Id], [IdMarca], [Nombre]) VALUES (30, 11, N'Sandero')
+GO
+INSERT [dbo].[Modelo] ([Id], [IdMarca], [Nombre]) VALUES (31, 11, N'Stepway')
+GO
+INSERT [dbo].[Modelo] ([Id], [IdMarca], [Nombre]) VALUES (32, 11, N'Logan')
+GO
+INSERT [dbo].[Modelo] ([Id], [IdMarca], [Nombre]) VALUES (33, 11, N'Duster')
+GO
+INSERT [dbo].[Modelo] ([Id], [IdMarca], [Nombre]) VALUES (34, 12, N'City')
+GO
+INSERT [dbo].[Modelo] ([Id], [IdMarca], [Nombre]) VALUES (35, 12, N'Civic')
+GO
+INSERT [dbo].[Modelo] ([Id], [IdMarca], [Nombre]) VALUES (36, 12, N'Accord')
+GO
+INSERT [dbo].[Modelo] ([Id], [IdMarca], [Nombre]) VALUES (37, 13, N'Cerato')
+GO
+INSERT [dbo].[Modelo] ([Id], [IdMarca], [Nombre]) VALUES (38, 13, N'Aurora')
+GO
+INSERT [dbo].[Modelo] ([Id], [IdMarca], [Nombre]) VALUES (39, 13, N'Sportage')
+GO
+SET IDENTITY_INSERT [dbo].[Modelo] OFF
 GO

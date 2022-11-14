@@ -130,12 +130,12 @@ namespace UI
                 ButtonNuevoAlquiler.Visible = false;
             }
 
-            if (bllPermiso.PermisoEncontrado(usuario.Permisos, "InspeccionVehiculo"))
+            if (bllPermiso.PermisoEncontrado(usuario.Permisos, "AdministracionVehiculo"))
             {
                 lblInspeccionVehiculo.Text = "1";
                 ButtonAgregarVehiculo.Visible = true;
                 ButtonVerVehiculos.Visible = true;
-                inspeccion.Visible = true;
+                administracion.Visible = true;
             }
             else
             {

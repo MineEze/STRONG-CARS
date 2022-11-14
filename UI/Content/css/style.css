@@ -360,10 +360,11 @@ input[type=text] {
 }
 
 footer {
-    background-color: black;
+    background-color: #101010;
     padding: 1em 0;
     text-align: center;
     position: absolute;
     bottom: 0;
     width: 100%;
+    color: #9d9d9d;
 }

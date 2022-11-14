@@ -18,7 +18,7 @@
         }
     </style>
     <div class="container containerAgregar">
-        <asp:Label ID="LabelTitulo" runat="server" CssClass="titulo-pagina" Text="Bitacora"></asp:Label>
+        <asp:Label ID="LabelTitulo" runat="server" CssClass="titulo-pagina" Text="Bitácora"></asp:Label>
         <br />
         <div class="form-inline">
             <asp:Label ID="LabelFiltroBitacoraUsuario" CssClass="labelfor" runat="server" Style="margin-top: 5px; min-width: 210px" Text="Filtrar por nombre de usuario"></asp:Label>

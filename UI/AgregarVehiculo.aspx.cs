@@ -15,7 +15,7 @@ namespace UI
         {
             var usuarioActual = Session["Usuario"] as Usuario;
             var bllPermiso = new BLLPermiso();
-            if (!bllPermiso.PermisoEncontrado(usuarioActual.Permisos, "InspeccionVehiculo"))
+            if (!bllPermiso.PermisoEncontrado(usuarioActual.Permisos, "AdministracionVehiculo"))
                 Response.Redirect("NoEncontrado.aspx");
 
             LabelCreacionVehiculoExito.Visible = false;
