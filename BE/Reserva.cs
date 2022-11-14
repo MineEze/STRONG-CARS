@@ -15,5 +15,13 @@ namespace BE
         public DateTime FechaFin { get; set; }
 
         public Vehiculo Vehiculo { get; set; }
+
+        public decimal CostoVehiculo { get; set; }
+
+        public decimal CostoChofer { get; set; }
+
+        public decimal RecargoSucursal { get; set; }
+
+        public decimal Total { get; set; }
     }
 }

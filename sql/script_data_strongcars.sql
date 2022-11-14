@@ -265,7 +265,7 @@ GO
 SET IDENTITY_INSERT [dbo].[Reserva] ON 
 
 GO
-INSERT [dbo].[Reserva] ([Id], [IdVehiculo], [FechaDeInicio], [FechaDeFin], [UltimaModificacion]) VALUES (1, 1, CAST(N'2022-11-09 00:00:00.0000000' AS DateTime2), CAST(N'2022-11-15 23:59:59.0000000' AS DateTime2), CAST(N'2022-11-14 11:29:14.0400000' AS DateTime2))
+INSERT [dbo].[Reserva] ([Id], [IdVehiculo], [FechaDeInicio], [FechaDeFin], [CostoVehiculo], [CostoChofer], [RecargoSucursal], [Total], [UltimaModificacion]) VALUES (1, 1, CAST(N'2022-11-09 00:00:00.0000000' AS DateTime2), CAST(N'2022-11-15 23:59:59.0000000' AS DateTime2), 240000, 0, 0, 240000, CAST(N'2022-11-14 11:29:14.0400000' AS DateTime2))
 GO
 SET IDENTITY_INSERT [dbo].[Reserva] OFF
 GO

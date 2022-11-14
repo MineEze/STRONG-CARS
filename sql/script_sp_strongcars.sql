@@ -317,12 +317,16 @@ CREATE PROC [dbo].[AltaReserva]
 @IdVehiculo int,
 @FechaDeInicio datetime2,
 @FechaDeFin datetime2,
+@CostoVehiculo decimal,
+@CostoChofer decimal,
+@RecargoSucursal decimal,
+@Total decimal,
 @UltimaModificacion datetime2
 
 AS BEGIN
 
-INSERT INTO Reserva (IdVehiculo, FechaDeInicio, FechaDeFin, UltimaModificacion)
-VALUES (@IdVehiculo, @FechaDeInicio, @FechaDeFin, @UltimaModificacion)
+INSERT INTO Reserva (IdVehiculo, FechaDeInicio, FechaDeFin, CostoVehiculo, CostoChofer, RecargoSucursal, Total, UltimaModificacion)
+VALUES (@IdVehiculo, @FechaDeInicio, @FechaDeFin, @CostoVehiculo, @CostoChofer, @RecargoSucursal, @Total, @UltimaModificacion)
 SELECT SCOPE_IDENTITY();
 
 END
@@ -746,7 +750,7 @@ CREATE PROC [dbo].[ListarAlquilerConChofer]
 AS 
 BEGIN
 
-SELECT Reserva.Id, IdVehiculo, FechaDeInicio, FechaDeFin, UltimaModificacion, IdChofer
+SELECT Reserva.Id, IdVehiculo, FechaDeInicio, FechaDeFin, Reserva.CostoVehiculo, Reserva.CostoChofer, Reserva.RecargoSucursal, Reserva.Total, UltimaModificacion, IdChofer
 FROM Reserva
 INNER JOIN AlquilerConChofer ON Reserva.Id = AlquilerConChofer.Id;
 
@@ -766,7 +770,7 @@ CREATE PROC [dbo].[ListarAlquileres]
 AS 
 BEGIN
 
-SELECT Reserva.Id, IdVehiculo, FechaDeInicio, FechaDeFin, Reserva.UltimaModificacion, IdSucursalOrigen, IdSucursalDestino, Retornado, Nombre, Apellido
+SELECT Reserva.Id, IdVehiculo, FechaDeInicio, FechaDeFin, Reserva.CostoVehiculo, Reserva.CostoChofer, Reserva.RecargoSucursal, Reserva.Total, Reserva.UltimaModificacion, IdSucursalOrigen, IdSucursalDestino, Retornado, Nombre, Apellido
 FROM Reserva
 INNER JOIN Alquiler ON Reserva.Id = Alquiler.Id
 INNER JOIN Persona ON Persona.Id = Alquiler.IdCliente;
@@ -976,7 +980,7 @@ CREATE PROC [dbo].[ListarReservas]
 AS 
 BEGIN
 
-SELECT Id, IdVehiculo, FechaDeInicio, FechaDeFin, UltimaModificacion
+SELECT Id, IdVehiculo, FechaDeInicio, FechaDeFin, CostoVehiculo, CostoChofer, RecargoSucursal, Total, UltimaModificacion
 FROM Reserva;
 
 END

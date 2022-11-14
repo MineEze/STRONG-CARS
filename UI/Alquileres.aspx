@@ -28,6 +28,7 @@
                 <asp:BoundField DataField="Vehiculo" HeaderText="Vehículo" />
                 <asp:BoundField DataField="FechaInicio" ApplyFormatInEditMode="true" DataFormatString="{0:d}" HeaderText="Inicio" />
                 <asp:BoundField DataField="FechaFin" ApplyFormatInEditMode="true" DataFormatString="{0:d}" HeaderText="Fin" />
+                <asp:BoundField DataField="Total" HeaderText="Costo total" />
                 <asp:TemplateField ShowHeader="False" HeaderText="Cancelar">
                     <ItemTemplate>
                         <asp:LinkButton ID="LinkButtonBorrar" CssClass="glyphicon glyphicon-remove" class="linkGrilla" runat="server" CommandArgument='<%# Eval("Id") %>' OnClientClick="if(!confirmacion()) return false;" OnClick="Borrar_Click" />

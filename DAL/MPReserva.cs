@@ -27,7 +27,11 @@ namespace DAL
                     Id = Convert.ToInt32(Registro["Id"]),
                     Vehiculo = new Vehiculo { Id = Convert.ToInt32(Registro["IdVehiculo"]) },
                     FechaInicio = Convert.ToDateTime(Registro["FechaDeInicio"]),
-                    FechaFin = Convert.ToDateTime(Registro["FechaDeFin"])
+                    FechaFin = Convert.ToDateTime(Registro["FechaDeFin"]),
+                    CostoVehiculo = Convert.ToDecimal(Registro["CostoVehiculo"]),
+                    CostoChofer = Convert.ToDecimal(Registro["CostoChofer"]),
+                    RecargoSucursal = Convert.ToDecimal(Registro["RecargoSucursal"]),
+                    Total = Convert.ToDecimal(Registro["Total"])
                 });
             }
 
@@ -54,7 +58,11 @@ namespace DAL
                     Vehiculo = new Vehiculo { Id = Convert.ToInt32(Registro["IdVehiculo"]) },
                     FechaInicio = Convert.ToDateTime(Registro["FechaDeInicio"]),
                     FechaFin = Convert.ToDateTime(Registro["FechaDeFin"]),
-                    Chofer = new Chofer { Id = Convert.ToInt32(Registro["IdChofer"]) }
+                    Chofer = new Chofer { Id = Convert.ToInt32(Registro["IdChofer"]) },
+                    CostoVehiculo = Convert.ToDecimal(Registro["CostoVehiculo"]),
+                    CostoChofer = Convert.ToDecimal(Registro["CostoChofer"]),
+                    RecargoSucursal = Convert.ToDecimal(Registro["RecargoSucursal"]),
+                    Total = Convert.ToDecimal(Registro["Total"])
                 });
             }
 
@@ -92,7 +100,11 @@ namespace DAL
                         Retornado = Convert.ToBoolean(Registro["Retornado"]),
                         SucursalOrigen = sucursales.First(s => s.Id == Convert.ToInt32(Registro["IdSucursalOrigen"])),
                         SucursalDestino = sucursales.First(s => s.Id == Convert.ToInt32(Registro["IdSucursalDestino"])),
-                        Cliente = new Cliente { Nombre = Registro["Nombre"].ToString(), Apellido = Registro["Apellido"].ToString() }
+                        Cliente = new Cliente { Nombre = Registro["Nombre"].ToString(), Apellido = Registro["Apellido"].ToString() },
+                        CostoVehiculo = Convert.ToDecimal(Registro["CostoVehiculo"]),
+                        CostoChofer = Convert.ToDecimal(Registro["CostoChofer"]),
+                        RecargoSucursal = Convert.ToDecimal(Registro["RecargoSucursal"]),
+                        Total = Convert.ToDecimal(Registro["Total"])
                     });
             }
 
@@ -105,11 +117,15 @@ namespace DAL
         {
             var acceso = new Acceso();
 
-            SqlParameter[] parametrosReserva = new SqlParameter[4];
+            SqlParameter[] parametrosReserva = new SqlParameter[8];
             parametrosReserva[0] = acceso.CrearParametro("@IdVehiculo", alquiler.Vehiculo.Id);
             parametrosReserva[1] = acceso.CrearParametro("@FechaDeInicio", alquiler.FechaInicio);
             parametrosReserva[2] = acceso.CrearParametro("@FechaDeFin", alquiler.FechaFin);
-            parametrosReserva[3] = acceso.CrearParametro("@UltimaModificacion", DateTime.Now);
+            parametrosReserva[3] = acceso.CrearParametro("@CostoVehiculo", alquiler.CostoVehiculo.ToString());
+            parametrosReserva[4] = acceso.CrearParametro("@CostoChofer", alquiler.CostoChofer.ToString());
+            parametrosReserva[5] = acceso.CrearParametro("@RecargoSucursal", alquiler.RecargoSucursal.ToString());
+            parametrosReserva[6] = acceso.CrearParametro("@Total", alquiler.Total.ToString());
+            parametrosReserva[7] = acceso.CrearParametro("@UltimaModificacion", DateTime.Now);
 
             acceso.Abrir();
 

@@ -14,7 +14,7 @@ namespace BE
 
         public Sucursal SucursalDestino { get; set; }
 
-        public decimal Precio { get; set; }
+        //public decimal Precio { get; set; }
 
         public bool Retornado { get; set; }
     }
@@ -28,5 +28,7 @@ namespace BE
         public string FechaFin { get; set; }
 
         public string Vehiculo { get; set; }
+
+        public string Total { get; set; }
     }
 }

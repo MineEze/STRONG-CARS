@@ -148,11 +148,18 @@ namespace UI
 
             alquiler.Vehiculo = vehiculoDisponibleSeleccionado;
 
-            Session["NuevoAlquiler"] = alquiler;
+            //Session["NuevoAlquiler"] = alquiler;
 
             var bllReserva = new BLLReserva();
             var presupuesto = bllReserva.CalcularPresupuesto(alquiler);
 
+            //desde aca nuevo
+            alquiler.CostoChofer = presupuesto.CostoChofer;
+            alquiler.CostoVehiculo = presupuesto.CostoVehiculo;
+            alquiler.RecargoSucursal = presupuesto.RecargoSucursal;
+            alquiler.Total = presupuesto.Total;
+            Session["NuevoAlquiler"] = alquiler;
+            //hasta aca nuevo
             var formato = string.Format("F{0}", 2);
 
             LabelPresupuestoDiasValor.Text = presupuesto.Dias.ToString();
