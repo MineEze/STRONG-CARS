@@ -84,10 +84,10 @@
             <asp:Label ID="LabelValidacionEmpresaSeleccion" runat="server" CssClass="alert alert-danger alerta-personalizada" Visible="false"></asp:Label>
 
             <br />            
-            <asp:Label ID="LabelEmpresaNombre" runat="server" CssClass="labelfor" Visible="false"></asp:Label>
+            <asp:Label ID="LabelEmpresaNombre" runat="server" CssClass="labelfor" Visible="false" Text="Nombre de la empresa"></asp:Label>
             <asp:TextBox ID="TextBoxEmpresaNombre" runat="server" CssClass="form-control" Visible="false"></asp:TextBox>
             <asp:Label ID="LabelValidacionEmpresaNombre" runat="server" CssClass="alert alert-danger alerta-personalizada" Visible="false"></asp:Label>
-            <asp:Label ID="LabelEmpresa" runat="server" CssClass="labelfor" Visible="false"></asp:Label>            
+            <asp:Label ID="LabelEmpresa" runat="server" CssClass="labelfor" Visible="false" Text="Empresa"></asp:Label>            
             <br />
             <br />
             <asp:RadioButtonList ID="RadioButtonListEmpresasExistentes" runat="server" Visible="false"></asp:RadioButtonList>

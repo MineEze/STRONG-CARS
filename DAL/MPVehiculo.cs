@@ -80,7 +80,6 @@ namespace DAL
                         Id = Convert.ToInt32(r["Id"]),
                         Kilometraje = Convert.ToInt32(r["Kilometraje"]),
                         PrecioDiarioBase = Convert.ToInt32(r["PrecioDiarioBase"]),
-                        PrecioPorKm = Convert.ToInt32(r["PrecioPorKm"]),
                         NivelBlindaje = Convert.ToInt32(r["NivelBlindaje"]),
                         Patente = r["Patente"].ToString(),
                         Sucursal = sucursal,
@@ -105,16 +104,15 @@ namespace DAL
         {
             var acceso = new Acceso();
 
-            SqlParameter[] parametros = new SqlParameter[9];
+            SqlParameter[] parametros = new SqlParameter[8];
             parametros[0] = acceso.CrearParametro("@Patente", vehiculo.Patente);
             parametros[1] = acceso.CrearParametro("@IdModelo", vehiculo.Modelo.Id);
             parametros[2] = acceso.CrearParametro("@NivelBlindaje", vehiculo.NivelBlindaje);
             parametros[3] = acceso.CrearParametro("@Kilometraje", vehiculo.Kilometraje);
             parametros[4] = acceso.CrearParametro("@PrecioDiarioBase", vehiculo.PrecioDiarioBase);
-            parametros[5] = acceso.CrearParametro("@PrecioPorKm", vehiculo.PrecioPorKm);
-            parametros[6] = acceso.CrearParametro("@IdSucursal", vehiculo.Sucursal.Id);
-            parametros[7] = acceso.CrearParametro("@FechaDeInicio", vehiculo.FechaDeInicio);
-            parametros[8] = acceso.CrearParametro("@UltimaModificacion", DateTime.Now);
+            parametros[5] = acceso.CrearParametro("@IdSucursal", vehiculo.Sucursal.Id);
+            parametros[6] = acceso.CrearParametro("@FechaDeInicio", vehiculo.FechaDeInicio);
+            parametros[7] = acceso.CrearParametro("@UltimaModificacion", DateTime.Now);
 
             acceso.Abrir();
             acceso.Escribir("AltaVehiculo", parametros);
@@ -125,17 +123,16 @@ namespace DAL
         {
             var acceso = new Acceso();
 
-            SqlParameter[] parametros = new SqlParameter[10];
+            SqlParameter[] parametros = new SqlParameter[9];
             parametros[0] = acceso.CrearParametro("@Id", vehiculo.Id);
             parametros[1] = acceso.CrearParametro("@IdModelo", vehiculo.Modelo.Id);
             parametros[2] = acceso.CrearParametro("@IdSucursal", vehiculo.Sucursal.Id);
             parametros[3] = acceso.CrearParametro("@Patente", vehiculo.Patente);
             parametros[4] = acceso.CrearParametro("@Kilometraje", vehiculo.Kilometraje);
             parametros[5] = acceso.CrearParametro("@PrecioDiarioBase", vehiculo.PrecioDiarioBase);
-            parametros[6] = acceso.CrearParametro("@PrecioPorKm", vehiculo.PrecioPorKm);
-            parametros[7] = acceso.CrearParametro("@NivelBlindaje", vehiculo.NivelBlindaje);
-            parametros[8] = acceso.CrearParametro("@UltimaModificacion", DateTime.Now);
-            parametros[9] = acceso.CrearParametro("@FechaDeInicio", vehiculo.FechaDeInicio);
+            parametros[6] = acceso.CrearParametro("@NivelBlindaje", vehiculo.NivelBlindaje);
+            parametros[7] = acceso.CrearParametro("@UltimaModificacion", DateTime.Now);
+            parametros[8] = acceso.CrearParametro("@FechaDeInicio", vehiculo.FechaDeInicio);
 
             acceso.Abrir();
             acceso.Escribir("ModificarVehiculo", parametros);

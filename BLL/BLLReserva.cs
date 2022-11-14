@@ -120,10 +120,8 @@ namespace BLL
 
             detallePresupuesto.CostoVehiculo = alquiler.Vehiculo.PrecioDiarioBase * detallePresupuesto.Dias;
 
-            detallePresupuesto.CostoPorKilometro = alquiler.Vehiculo.PrecioPorKm;
-
             if (alquiler.Chofer != null)
-                detallePresupuesto.CostoChofer = 9500 * detallePresupuesto.Dias;
+                detallePresupuesto.CostoChofer = 14300 * detallePresupuesto.Dias;
             else
                 detallePresupuesto.CostoChofer = 0;
 
@@ -162,8 +160,6 @@ namespace BLL
         public decimal Total { get; set; }
 
         public decimal CostoVehiculo { get; set; }
-
-        public decimal CostoPorKilometro { get; set; }
 
         public decimal CostoChofer { get; set; }
 

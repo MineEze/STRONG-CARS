@@ -382,7 +382,6 @@ CREATE TABLE [dbo].[Vehiculo](
 	[Patente] [varchar](10) NOT NULL,
 	[Kilometraje] [int] NOT NULL,
 	[PrecioDiarioBase] [int] NOT NULL,
-	[PrecioPorKm] [int] NOT NULL,
 	[FechaDeInicio] [datetime2](7) NOT NULL,
 	[NivelBlindaje] [int] NOT NULL,
 	[UltimaModificacion] [datetime2](7) NOT NULL,
@@ -576,6 +575,8 @@ INSERT [dbo].[Marca] ([Id], [Nombre]) VALUES (12, N'Honda')
 GO
 INSERT [dbo].[Marca] ([Id], [Nombre]) VALUES (13, N'Kia')
 GO
+INSERT [dbo].[Marca] ([Id], [Nombre]) VALUES (14, N'Toyota')
+GO
 SET IDENTITY_INSERT [dbo].[Marca] OFF
 GO
 SET IDENTITY_INSERT [dbo].[Modelo] ON 
@@ -658,6 +659,12 @@ GO
 INSERT [dbo].[Modelo] ([Id], [IdMarca], [Nombre]) VALUES (38, 13, N'Aurora')
 GO
 INSERT [dbo].[Modelo] ([Id], [IdMarca], [Nombre]) VALUES (39, 13, N'Sportage')
+GO
+INSERT [dbo].[Modelo] ([Id], [IdMarca], [Nombre]) VALUES (40, 14, N'Yaris')
+GO
+INSERT [dbo].[Modelo] ([Id], [IdMarca], [Nombre]) VALUES (41, 14, N'Corolla')
+GO
+INSERT [dbo].[Modelo] ([Id], [IdMarca], [Nombre]) VALUES (42, 14, N'Innova')
 GO
 SET IDENTITY_INSERT [dbo].[Modelo] OFF
 GO

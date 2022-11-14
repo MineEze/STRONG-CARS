@@ -59,12 +59,6 @@
             <asp:Label ID="LabelValidacionPrecioDiarioBaseNumerico" runat="server" CssClass="alert alert-danger alerta-personalizada escondido" Text="El precio diario debe ser un valor numérico"></asp:Label>
         </div>
         <div class="form-group">
-            <asp:Label ID="LabelPrecioPorKm" runat="server" CssClass="labelfor" Text="Precio por kilómetro"></asp:Label>
-            <asp:TextBox ID="TextBoxPrecioPorKm" runat="server" CssClass="form-control"></asp:TextBox>
-            <asp:Label ID="LabelValidacionPrecioPorKm" runat="server" CssClass="alert alert-danger alerta-personalizada escondido" Text="Por favor ingrese precio por kilómetro"></asp:Label>
-            <asp:Label ID="LabelValidacionPrecioPorKmNumerico" runat="server" CssClass="alert alert-danger alerta-personalizada escondido" Text="El precio por kilómetro debe ser un valor numérico"></asp:Label>
-        </div>
-        <div class="form-group">
             <asp:Label ID="LabelFechaInicio" runat="server" CssClass="labelfor" Text="Fecha de inicio"></asp:Label>
             <asp:Calendar ID="CalendarFechaInicio" runat="server"></asp:Calendar>
         </div>

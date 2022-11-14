@@ -60,6 +60,8 @@
         </div>
         <div class="form-group">
             <asp:Label ID="LabelTelefono" runat="server" CssClass="labelfor" Text="Teléfono"></asp:Label>
+            <br />
+            <br />
             <asp:Label ID="LabelTelefonoCaracteristica" runat="server" CssClass="labelfor" Text="Caracteristica"></asp:Label>
             <asp:TextBox ID="TextBoxTelefonoCaracteristica" runat="server" CssClass="form-control"></asp:TextBox>
             <asp:Label ID="LabelValidacionTelefonoCaracteristica" runat="server" CssClass="alert alert-danger alerta-personalizada escondido" Text="La característica debe tener al menos 2 dígitos"></asp:Label>

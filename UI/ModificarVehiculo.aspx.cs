@@ -43,7 +43,6 @@ namespace UI
                 TextBoxKilometraje.Text = vehiculo.Kilometraje.ToString();
                 TextBoxPatente.Text = vehiculo.Patente;
                 TextBoxPrecioDiarioBase.Text = vehiculo.PrecioDiarioBase.ToString();
-                TextBoxPrecioPorKm.Text = vehiculo.PrecioPorKm.ToString();
 
                 CalendarFechaInicio.SelectedDate = vehiculo.FechaDeInicio.Date;
                 CalendarFechaInicio.VisibleDate = CalendarFechaInicio.SelectedDate;
@@ -111,7 +110,6 @@ namespace UI
             vehiculo.Patente = TextBoxPatente.Text;
             vehiculo.Kilometraje = Convert.ToInt32(TextBoxKilometraje.Text);
             vehiculo.PrecioDiarioBase = Convert.ToInt32(TextBoxPrecioDiarioBase.Text);
-            vehiculo.PrecioPorKm = Convert.ToInt32(TextBoxPrecioPorKm.Text);
 
             var modelos = (List<Modelo>)Session["Modelos"];
             vehiculo.Modelo = modelos.First(m => m.Nombre == DropDownListModelo.SelectedItem.Value);
@@ -133,7 +131,6 @@ namespace UI
             TextBoxPatente.Enabled = false;
             TextBoxKilometraje.Enabled = false;
             TextBoxPrecioDiarioBase.Enabled = false;
-            TextBoxPrecioPorKm.Enabled = false;
 
             ButtonModificarVehiculo.Enabled = false;
             ButtonModificarVehiculo.CssClass = "btn btn-primary";

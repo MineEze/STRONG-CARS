@@ -157,7 +157,6 @@ namespace UI
 
             LabelPresupuestoDiasValor.Text = presupuesto.Dias.ToString();
             LabelPresupuestoChoferValor.Text = presupuesto.CostoChofer.ToString(formato);
-            LabelPresupuestoVehiculoKmValor.Text = presupuesto.CostoPorKilometro.ToString(formato);
             LabelPresupuestoVehiculoValor.Text = presupuesto.CostoVehiculo.ToString(formato);
             LabelPresupuestoRecargoValor.Text = presupuesto.RecargoSucursal.ToString(formato);
             LabelTotalValor.Text = presupuesto.Total.ToString(formato);

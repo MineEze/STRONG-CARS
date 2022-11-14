@@ -22,10 +22,10 @@
         }
     </style>
     <div class="container containerAgregar">
-        <asp:Label ID="LabelTitulo" runat="server" CssClass="titulo-pagina"></asp:Label>
+        <asp:Label ID="LabelTitulo" runat="server" CssClass="titulo-pagina" Text="Nuevo alquiler"></asp:Label>
         <br />
         <div class="form-inline">
-            <asp:Label ID="LabelSucursal" runat="server" CssClass="labelfor"></asp:Label>
+            <asp:Label ID="LabelSucursal" runat="server" CssClass="labelfor" Text="Sucursal"></asp:Label>
             <asp:DropDownList ID="DropDownListSucursalesOrigen" runat="server" CssClass="ddl form-control" OnSelectedIndexChanged="DropDownListSucursalesOrigen_SelectedIndexChanged"></asp:DropDownList>
         </div>
         <br />
@@ -40,18 +40,18 @@
             <asp:Label ID="LabelValidacionFechas" runat="server" CssClass="alert alert-danger alerta-personalizada" Visible="false"></asp:Label>
         </div>
         <div class="form-group">
-            <asp:Label ID="LabelNivelBlindaje" runat="server" CssClass="labelfor"></asp:Label>
+            <asp:Label ID="LabelNivelBlindaje" runat="server" CssClass="labelfor" Text="Nivel de blindaje"></asp:Label>
             <asp:DropDownList ID="DropDownListNivelBlindaje" runat="server" CssClass="ddl form-control" OnSelectedIndexChanged="DropDownListNivelBlindaje_SelectedIndexChanged"></asp:DropDownList>
         </div>
         <div class="form-group">
             <asp:Button ID="ButtonCargarVehiculos" runat="server" class="btn btn-primary" OnClick="ButtonCargarVehiculos_Click" Text="Ver vehículos disponibles" />
         </div>
         <div class="form-group">
-            <asp:Label ID="LabelMenuVehiculos" runat="server" CssClass="labelfor"></asp:Label>
+            <asp:Label ID="LabelMenuVehiculos" runat="server" CssClass="labelfor" Text="Vehículos"></asp:Label>
             <asp:DropDownList ID="DropDownListVehiculosDisponibles" runat="server" CssClass="ddl form-control" OnSelectedIndexChanged="DropDownListVehiculosDisponibles_SelectedIndexChanged"></asp:DropDownList>
         </div>
         <div class="form-group">
-            <asp:Label ID="LabelSucursalDestino" runat="server" CssClass="labelfor"></asp:Label>
+            <asp:Label ID="LabelSucursalDestino" runat="server" CssClass="labelfor" Text="Sucursal de retorno"></asp:Label>
             <asp:DropDownList ID="DropDownListSucursalesDestino" runat="server" CssClass="ddl form-control" OnSelectedIndexChanged="DropDownListSucursalesDestino_SelectedIndexChanged"></asp:DropDownList>
         </div>
         <div class="form-group checkChofer">
@@ -70,9 +70,6 @@
             <br />
             <asp:Label ID="LabelPresupuestoVehiculo" runat="server" Style="font-weight: bold;" Text="Costo por vehículo: "></asp:Label>
             $<asp:Label ID="LabelPresupuestoVehiculoValor" runat="server"></asp:Label>
-            <br />
-            <asp:Label ID="LabelPresupuestoVehiculoKm" runat="server" Style="font-weight: bold;" Text="Costo por kilómetro: "></asp:Label>
-            $<asp:Label ID="LabelPresupuestoVehiculoKmValor" runat="server"></asp:Label>
             <br />
             <asp:Label ID="LabelPresupuestoChofer" runat="server" Style="font-weight: bold;" Text="Costo chofer: "></asp:Label>
             $<asp:Label ID="LabelPresupuestoChoferValor" runat="server"></asp:Label>

@@ -145,7 +145,6 @@
         <div class="container containerFondo">
             <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
         </div>
-        <hr />
         <footer>
             <div class="container">
                 <div class="hidden">

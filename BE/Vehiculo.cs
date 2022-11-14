@@ -20,8 +20,6 @@ namespace BE
 
         public int PrecioDiarioBase { get; set; }
 
-        public int PrecioPorKm { get; set; }
-
         public Sucursal Sucursal { get; set; }
 
         public DateTime FechaDeInicio { get; set; }

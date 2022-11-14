@@ -617,21 +617,5 @@ function validarFormRegistrarVehiculo() {
         document.getElementById("MainContent_LabelValidacionPrecioDiarioBaseNumerico").style.display = "none";
     }
 
-    var precioPorKm = document.getElementById("MainContent_TextBoxPrecioPorKm").value;
-
-    if (precioPorKm.length < 1) {
-        document.getElementById("MainContent_LabelValidacionPrecioPorKm").style.display = "inline-block";
-        validacionCorrecta = false;
-    } else {
-        document.getElementById("MainContent_LabelValidacionPrecioPorKm").style.display = "none";
-    }
-
-    if (isNaN(precioPorKm)) {
-        document.getElementById("MainContent_LabelValidacionPrecioPorKmNumerico").style.display = "inline-block";
-        validacionCorrecta = false;
-    } else {
-        document.getElementById("MainContent_LabelValidacionPrecioPorKmNumerico").style.display = "none";
-    }
-
     return validacionCorrecta;
 }

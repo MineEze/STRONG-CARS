@@ -186,42 +186,6 @@ namespace UI
         protected global::System.Web.UI.WebControls.Label LabelValidacionPrecioDiarioBaseNumerico;
 
         /// <summary>
-        /// Control LabelPrecioPorKm.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelPrecioPorKm;
-
-        /// <summary>
-        /// Control TextBoxPrecioPorKm.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxPrecioPorKm;
-
-        /// <summary>
-        /// Control LabelValidacionPrecioPorKm.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelValidacionPrecioPorKm;
-
-        /// <summary>
-        /// Control LabelValidacionPrecioPorKmNumerico.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelValidacionPrecioPorKmNumerico;
-
-        /// <summary>
         /// Control LabelFechaInicio.
         /// </summary>
         /// <remarks>

@@ -455,15 +455,14 @@ CREATE PROC [dbo].[AltaVehiculo]
 @Patente varchar(10),
 @Kilometraje int,
 @PrecioDiarioBase int,
-@PrecioPorKm int,
 @FechaDeInicio datetime2,
 @NivelBlindaje int,
 @UltimaModificacion datetime2
 
 AS BEGIN
 
-INSERT INTO Vehiculo (Patente, IdModelo, NivelBlindaje, Kilometraje, PrecioDiarioBase, PrecioPorKm, IdSucursal, FechaDeInicio, UltimaModificacion)
-VALUES (@Patente, @IdModelo, @NivelBlindaje, @Kilometraje, @PrecioDiarioBase, @PrecioPorKm, @IdSucursal, @FechaDeInicio, @UltimaModificacion);
+INSERT INTO Vehiculo (Patente, IdModelo, NivelBlindaje, Kilometraje, PrecioDiarioBase, IdSucursal, FechaDeInicio, UltimaModificacion)
+VALUES (@Patente, @IdModelo, @NivelBlindaje, @Kilometraje, @PrecioDiarioBase, @IdSucursal, @FechaDeInicio, @UltimaModificacion);
 
 END
 ------------------------------------------------------------------------------------------------------------------------
@@ -1076,7 +1075,7 @@ CREATE PROC [dbo].[ListarVehiculos]
 AS
 BEGIN
 
-SELECT Vehiculo.Id, IdModelo, IdSucursal, Patente, Kilometraje, PrecioDiarioBase, PrecioPorKm,
+SELECT Vehiculo.Id, IdModelo, IdSucursal, Patente, Kilometraje, PrecioDiarioBase,
 FechaDeInicio, NivelBlindaje, UltimaModificacion, Borrado, Modelo.Nombre AS ModeloNombre, Marca.Nombre AS MarcaNombre, Marca.Id AS MarcaId
 FROM Vehiculo
 INNER JOIN Modelo ON IdModelo = Modelo.Id
@@ -1248,7 +1247,6 @@ CREATE PROC [dbo].[ModificarVehiculo]
 @Patente varchar(10),
 @Kilometraje int,
 @PrecioDiarioBase int,
-@PrecioPorKm int,
 @NivelBlindaje int,
 @UltimaModificacion datetime2,
 @FechaDeInicio datetime2
@@ -1263,7 +1261,6 @@ IdSucursal = @IdSucursal,
 Patente = @Patente,
 Kilometraje = @Kilometraje,
 PrecioDiarioBase = @PrecioDiarioBase,
-PrecioPorKm = @PrecioPorKm,
 NivelBlindaje = @NivelBlindaje,
 FechaDeInicio = @FechaDeInicio,
 UltimaModificacion = @UltimaModificacion

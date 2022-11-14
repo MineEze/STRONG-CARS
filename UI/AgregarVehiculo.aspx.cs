@@ -51,7 +51,6 @@ namespace UI
                 Patente = TextBoxPatente.Text,
                 Kilometraje = Convert.ToInt32(TextBoxKilometraje.Text),
                 PrecioDiarioBase = Convert.ToInt32(TextBoxPrecioDiarioBase.Text),
-                PrecioPorKm = Convert.ToInt32(TextBoxPrecioPorKm.Text),
                 NivelBlindaje = Convert.ToInt32(DropDownListNivelBlindaje.SelectedValue)
             };
 
@@ -74,7 +73,6 @@ namespace UI
             TextBoxPatente.Enabled = false;
             TextBoxKilometraje.Enabled = false;
             TextBoxPrecioDiarioBase.Enabled = false;
-            TextBoxPrecioPorKm.Enabled = false;
 
             ButtonCrearVehiculo.Enabled = false;
             ButtonCrearVehiculo.CssClass = "btn btn-primary";
