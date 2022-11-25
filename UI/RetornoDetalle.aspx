@@ -27,7 +27,7 @@
             <asp:Label ID="LabelClienteValor" runat="server" Text="Vehículo"></asp:Label>
         </div>
         <div class="form-group">
-            <asp:Label ID="LabelVehiculo" CssClass="labelfor" runat="server"></asp:Label>
+            <asp:Label ID="LabelVehiculo" CssClass="labelfor" runat="server" Text="Vehículo"></asp:Label>
             <asp:Label ID="LabelVehiculoValor" runat="server"></asp:Label>
         </div>
         <div class="form-group">
